@@ -6,6 +6,11 @@ syntax on                     " turn on syntax highlighting
 set showmatch                 " show matching braces when text indicator is over them
 filetype plugin indent on     " enable file type detection 
 set autoindent                " align the new line indent with the previous line
+set nowrap 		              " don't wrap lines
+set expandtab		          " insert spaces, not tabs
+set tabstop=4                 " a hard TAB displays as 4 columns
+set shiftwidth=4              " indent/unident 4 columns 
+set softtabstop=4             " insert/delete 4 spaces when hitting a TAB/BACKSPACE
 
 "Colors and appearance
 set t_Co=256
@@ -13,10 +18,6 @@ set background=dark
 colorscheme molokai
 set nu                        " number lines
 set ruler                     " show ruler, current position in file
-
-" Whitespace
-set nowrap 		      " don't wrap lines
-set expandtab		      " insert spaces, not tabs
 
 "Searching
 set hlsearch		      " highlight matches
