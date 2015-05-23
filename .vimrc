@@ -4,10 +4,15 @@ filetype off                  " required
 "Syntax and indentation
 syntax on                     " turn on syntax highlighting
 set showmatch                 " show matching braces when text indicator is over them
+filetype plugin indent on     " enable file type detection 
+set autoindent                " align the new line indent with the previous line
 
+"Colors and appearance
 set t_Co=256
 set background=dark
 colorscheme molokai
+set nu                        " number lines
+set ruler                     " show ruler, current position in file
 
 " Whitespace
 set nowrap 		      " don't wrap lines
@@ -17,6 +22,7 @@ set expandtab		      " insert spaces, not tabs
 set hlsearch		      " highlight matches
 set ignorecase		      " searches are case insensitive...
 set smartcase		      " ...unless they contain at least one cap
+set incsearch                 " incremental search (as string is being typed in)
 
 "Custom key mappings
 imap jj <Esc>
