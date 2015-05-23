@@ -1,21 +1,25 @@
-imap jj <Esc>
-
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
+"Syntax and indentation
+syntax on                     " turn on syntax highlighting
+set showmatch                 " show matching braces when text indicator is over them
+
 set t_Co=256
-syntax on
 set background=dark
-colorscheme solarized
+colorscheme molokai
 
 " Whitespace
 set nowrap 		      " don't wrap lines
-set expandtab		      " use spaces, not tabs
+set expandtab		      " insert spaces, not tabs
 
 "Searching
 set hlsearch		      " highlight matches
 set ignorecase		      " searches are case insensitive...
 set smartcase		      " ...unless they contain at least one cap
+
+"Custom key mappings
+imap jj <Esc>
 
 hi Normal ctermbg=none
 
