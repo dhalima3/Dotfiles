@@ -1,10 +1,24 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
+Plugin 'scrooloose/syntastic'
+Plugin 'kien/ctrlp.vim'
+Plugin 'bling/vim-airline'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin on    " required
+
 "Syntax and indentation
 syntax on                     " turn on syntax highlighting
 set showmatch                 " show matching braces when text indicator is over them
-filetype plugin indent on     " enable file type detection 
+"filetype plugin indent on     " enable file type detection 
 set autoindent                " align the new line indent with the previous line
 set nowrap 		              " don't wrap lines
 set expandtab		          " insert spaces, not tabs
@@ -20,10 +34,11 @@ set nu                        " number lines
 set ruler                     " show ruler, current position in file
 
 "Searching
-set hlsearch		      " highlight matches
-set ignorecase		      " searches are case insensitive...
-set smartcase		      " ...unless they contain at least one cap
-set incsearch                 " incremental search (as string is being typed in)
+set hlsearch		             " highlight matches
+set ignorecase		             " searches are case insensitive...
+set smartcase		             " ...unless they contain at least one cap
+set incsearch                    " incremental search (as string is being typed in)
+nnoremap <CR> :noh<CR><CR>       
 
 "Custom key mappings
 imap jj <Esc>
@@ -36,24 +51,13 @@ nnoremap <Right> :echoe "Use l"<CR>
 nnoremap <Up> :echoe "Use k"<CR>
 nnoremap <Down> :echoe "Use j"<CR>
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+" Plugin configuration
 
-" let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
-Plugin 'scrooloose/syntastic'
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin on    " required
-" To ignore plugin indent changes, instead use:
-"filetype plugin on
-"
+" ctrlp
+nnoremap ; :CtrlPBuffer<CR>
+
 " Brief help
 " :PluginList       - lists configured plugins
 " :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
 " :PluginSearch foo - searches for foo; append `!` to refresh local cache
 " :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-"
-" see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line
