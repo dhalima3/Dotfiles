@@ -45,6 +45,8 @@ nnoremap <CR> :noh<CR><CR>
 "Custom key mappings
 imap jj <Esc>
 let mapleader = ","
+" For local replace
+nnoremap gr gd[{V%::s/<C-R>///gc<left><left><left> 
 
 hi Normal ctermbg=none
 
