@@ -10,10 +10,11 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'kien/ctrlp.vim'
 Plugin 'bling/vim-airline'
+Plugin 'ervandew/supertab'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
-filetype plugin on    " required
+filetype plugin indent on    " required
 
 "Syntax and indentation
 syntax on                     " turn on syntax highlighting
@@ -42,6 +43,7 @@ nnoremap <CR> :noh<CR><CR>
 
 "Custom key mappings
 imap jj <Esc>
+let mapleader = ","
 
 hi Normal ctermbg=none
 
