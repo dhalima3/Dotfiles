@@ -7,6 +7,8 @@ export ZSH=/Users/Daryl/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir rbenv vcs)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status)
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
