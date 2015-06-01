@@ -47,7 +47,7 @@ POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git extract pep8 pyenv pylint python node npm bower)
+plugins=(git gitignore extract pep8 pyenv pylint python node npm bower)
 
 # User configuration
 
