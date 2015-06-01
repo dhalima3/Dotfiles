@@ -1,0 +1,3 @@
+[submodule "powerlevel9k"]submodule
+    path = powerlevel9k
+    pathurl = https://github.com/bhilburn/powerlevel9k
