@@ -44,11 +44,19 @@ nnoremap <CR> :noh<CR><CR>
 
 "Custom key mappings
 imap jj <Esc>
-let mapleader = ","
+let mapleader = "\<Space>"
 nnoremap gR gD:%s/<C-R>///gc<left><left><left>
 nnoremap <leader>caa gg"*yG<CR>
 
 hi Normal ctermbg=none
+
+" copy and paste to system clipboard
+vmap <Leader>y "+y
+vmap <Leader>d "+d
+nmap <Leader>p "+p
+nmap <Leader>P "+P
+vmap <Leader>p "+p
+vmap <Leader>P "+P
 
 " disable arrow keys
 nnoremap <Left> :echoe "Use h"<CR>
