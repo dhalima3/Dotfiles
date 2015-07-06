@@ -44,10 +44,9 @@ set incsearch                    " incremental search (as string is being typed 
 nnoremap <CR> :noh<CR><CR>       
 
 "Custom key mappings
-imap jj <Esc>
-let mapleader = "\<Space>"
-nnoremap gR gD:%s/<C-R>///gc<left><left><left>
-nnoremap <leader>caa gg"*yG<CR>
+imap jj <Esc>                                   " Map jj to escape
+let mapleader = "\<Space>"                      " Set leader to space
+nnoremap gR gD:%s/<C-R>///gc<left><left><left>  " Global variable replace
 
 hi Normal ctermbg=none
 
@@ -58,6 +57,7 @@ nmap <Leader>p "+p
 nmap <Leader>P "+P
 vmap <Leader>p "+p
 vmap <Leader>P "+P
+nnoremap <leader>caa gg"*yG<CR>                 " Copy whole file to system clipboard
 
 " disable arrow keys
 nnoremap <Left> :echoe "Use h"<CR>
@@ -67,8 +67,8 @@ nnoremap <Down> :echoe "Use j"<CR>
 
 " Plugin configuration
 
-" ctrlp
-nnoremap ; :CtrlPBuffer<CR>
+" ctrlp, opening a file
+nnoremap <Leader>o :CtrlP<CR>
 
 " Brief help
 " :PluginList       - lists configured plugins
