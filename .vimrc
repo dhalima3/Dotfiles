@@ -44,9 +44,12 @@ set incsearch                    " incremental search (as string is being typed 
 nnoremap <CR> :noh<CR><CR>       
 
 "Custom key mappings
-imap jj <Esc>                                   " Map jj to escape
+inoremap jj <Esc>
 let mapleader = "\<Space>"                      " Set leader to space
-nnoremap gR gD:%s/<C-R>///gc<left><left><left>  " Global variable replace
+" For local replace
+nnoremap gr gd[{V%::s/<C-R>///gc<left><left><left>
+" For global replace
+nnoremap gR gD:%s/<C-R>///gc<left><left><left>
 
 hi Normal ctermbg=none
 
