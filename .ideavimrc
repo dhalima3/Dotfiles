@@ -1,1 +1,24 @@
-imap jj <Esc> 
+source ~/.vimrc
+let mapleader = " "
+
+" copy and paste to system clipboard
+noremap <Leader>y "*y
+noremap <Leader>Y "*Y
+noremap <Leader>p "*p
+noremap <Leader>P "*P
+
+" code navigation
+nnoremap <Leader>u :action FindUsages<cr>
+nnoremap <Leader>i :action GotoImplementation<cr>
+nnoremap <Leader>sm :action GotoSuperMethod<cr>
+"nnoremap <Leader>t :action GotoTest<cr>
+nnoremap <Leader>o :action GotoFile<cr>
+"nnoremap <Leader>s :action FileStructurePopup<cr>
+nnoremap <Leader><BS> :action VimFilePrevious<cr>
+
+" actions
+nnoremap <Leader>r :action Run<cr>
+nnoremap <Leader>d :action Debug<cr>
+nnoremap <Leader>q :action CloseContent<cr>
+nnoremap <Leader>Q :action ReopenClosedTab<cr>
+nnoremap <Leader>b :action ToggleLineBreakpoint<cr>
