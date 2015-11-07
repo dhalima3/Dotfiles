@@ -63,7 +63,6 @@ nmap <Leader>p "+p
 nmap <Leader>P "+P
 vmap <Leader>p "+p
 vmap <Leader>P "+P
-"nnoremap <leader>aca gg"*yG<CR>                 " Copy whole file to system clipboard
 
 " disable arrow keys
 "nnoremap <Left> :echoe "Use h"<CR>
