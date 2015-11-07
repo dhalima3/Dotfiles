@@ -10,7 +10,9 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'kien/ctrlp.vim'
 Plugin 'bling/vim-airline'
-Plugin 'ervandew/supertab'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'terryma/vim-expand-region'
+"Plugin 'ervandew/supertab'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'flazz/vim-colorschemes'
 
@@ -28,6 +30,7 @@ set expandtab		          " insert spaces, not tabs
 set tabstop=4                 " a hard TAB displays as 4 columns
 set shiftwidth=4              " indent/unident 4 columns 
 set softtabstop=4             " insert/delete 4 spaces when hitting a TAB/BACKSPACE
+set backspace=2               " Backspace deletes like most programs in insert mode
 
 "Colors and appearance
 set t_Co=256
@@ -60,18 +63,22 @@ nmap <Leader>p "+p
 nmap <Leader>P "+P
 vmap <Leader>p "+p
 vmap <Leader>P "+P
-nnoremap <leader>caa gg"*yG<CR>                 " Copy whole file to system clipboard
+"nnoremap <leader>aca gg"*yG<CR>                 " Copy whole file to system clipboard
 
 " disable arrow keys
-nnoremap <Left> :echoe "Use h"<CR>
-nnoremap <Right> :echoe "Use l"<CR>
-nnoremap <Up> :echoe "Use k"<CR>
-nnoremap <Down> :echoe "Use j"<CR>
+"nnoremap <Left> :echoe "Use h"<CR>
+"nnoremap <Right> :echoe "Use l"<CR>
+"nnoremap <Up> :echoe "Use k"<CR>
+"nnoremap <Down> :echoe "Use j"<CR>
 
 " Plugin configuration
 
 " ctrlp, opening a file
 nnoremap <Leader>o :CtrlP<CR>
+
+" vim-expand-region
+vmap v <Plug>(expand_region_expand)
+vmap <C-v> <Plug>(expand_region_shrink)
 
 " Brief help
 " :PluginList       - lists configured plugins
