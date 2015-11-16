@@ -74,14 +74,15 @@ vmap <Leader>P "+P
 
 " Plugin configuration
 
-" ctrlp, opening a file
+" Ctrlp
+" Opening a file
 nnoremap <Leader>o :CtrlP<CR>
 
-" youcompleteme
-" close omni-completion once a selection is made
+" Youcompleteme
+" Close omni-completion once a selection is made
 autocmd CompleteDone * pclose
 
-" vim-expand-region
+" Vim-expand-region
 vmap v <Plug>(expand_region_expand)
 vmap <C-v> <Plug>(expand_region_shrink)
 " Brief help
