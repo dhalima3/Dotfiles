@@ -80,7 +80,7 @@ nnoremap <Leader>o :CtrlP<CR>
 
 " Youcompleteme
 " Close omni-completion once a selection is made
-autocmd CompleteDone * pclose
+"autocmd CompleteDone * pclose
 
 " Vim-expand-region
 vmap v <Plug>(expand_region_expand)
