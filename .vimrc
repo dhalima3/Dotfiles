@@ -17,6 +17,7 @@ Plugin 'jeffkreeftmeijer/vim-numbertoggle'
 "Plugin 'ervandew/supertab'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'flazz/vim-colorschemes'
+Plugin 'klen/python-mode'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -81,6 +82,10 @@ nnoremap <Leader>o :CtrlP<CR>
 " Youcompleteme
 " Close omni-completion once a selection is made
 "autocmd CompleteDone * pclose
+
+" Python Mode
+" Solve conflict with youcompleteme
+let g:pymode_rope_complete_on_dot = 0
 
 " Vim-expand-region
 vmap v <Plug>(expand_region_expand)
