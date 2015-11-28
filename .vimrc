@@ -81,7 +81,7 @@ nnoremap <Leader>o :CtrlP<CR>
 
 " Youcompleteme
 " Close omni-completion once a selection is made
-"autocmd CompleteDone * pclose
+let g:ycm_autoclose_preview_window_after_insertion = 1
 
 " Python Mode
 " Solve conflict with youcompleteme
