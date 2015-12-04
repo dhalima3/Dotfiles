@@ -16,6 +16,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'jeffkreeftmeijer/vim-numbertoggle'
 "Plugin 'ervandew/supertab'
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'tpope/vim-surround'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'klen/python-mode'
 
