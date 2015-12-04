@@ -8,7 +8,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 Plugin 'scrooloose/syntastic'
-Plugin 'kien/ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'bling/vim-airline'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'terryma/vim-expand-region'
@@ -17,6 +17,7 @@ Plugin 'jeffkreeftmeijer/vim-numbertoggle'
 "Plugin 'ervandew/supertab'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'tpope/vim-surround'
+Plugin 'majutsushi/tagbar'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'klen/python-mode'
 
