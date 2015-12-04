@@ -79,7 +79,7 @@ vmap <Leader>P "+P
 
 " Ctrlp
 " Opening a file
-nnoremap <Leader>o :CtrlP<CR>
+nnoremap <Leader>O :CtrlP<CR>
 
 " Tagbar
 " Toggling tagbar
