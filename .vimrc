@@ -84,6 +84,8 @@ nnoremap <Leader>O :CtrlP<CR>
 " Vim Airline
 " Fix airline not showing up until a split
 set laststatus=2
+" Set airline theme
+let g:airline_theme = "solarized"
 
 " Tagbar
 " Toggling tagbar
