@@ -9,8 +9,8 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'bling/vim-airline'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'bling/vim-airline'
 Plugin 'terryma/vim-expand-region'
 Plugin 'tpope/vim-fugitive'
 Plugin 'jeffkreeftmeijer/vim-numbertoggle'
@@ -80,6 +80,10 @@ vmap <Leader>P "+P
 " Ctrlp
 " Opening a file
 nnoremap <Leader>O :CtrlP<CR>
+
+" Vim Airline
+" Fix airline not showing up until a split
+set laststatus=2
 
 " Tagbar
 " Toggling tagbar
