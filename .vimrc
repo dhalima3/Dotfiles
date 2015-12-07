@@ -103,7 +103,16 @@ let g:pymode_rope_complete_on_dot = 0
 " Vim-expand-region
 vmap v <Plug>(expand_region_expand)
 vmap <C-v> <Plug>(expand_region_shrink)
-" Brief help
+" Extend the global default (NOTE: Remove comments in dictionary before sourcing)
+call expand_region#custom_text_objects({
+      \ "\/\\n\\n\<CR>": 1, 
+      \ 'a]' :1, 
+      \ 'ab' :1,
+      \ 'aB' :1,
+      \ 'ii' :0, 
+      \ 'ai' :0, 
+      \ })" Brief help
+
 " :PluginList       - lists configured plugins
 " :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
 " :PluginSearch foo - searches for foo; append `!` to refresh local cache
