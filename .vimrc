@@ -47,11 +47,18 @@ set nu                        " number lines
 set ruler                     " show ruler, current position in file
 
 "Searching
-set hlsearch		             " highlight matches
-set ignorecase		             " searches are case insensitive...
-set smartcase		             " ...unless they contain at least one cap
-set incsearch                    " incremental search (as string is being typed in)
-nnoremap <CR> :noh<CR><CR>       
+" highlight matches
+set hlsearch
+" searches are case insensitive...
+set ignorecase
+" ...unless they contain at least one cap
+set smartcase
+" incremental search (as string is being typed in)
+set incsearch
+" pressing enter key will clear highlighted search results
+nnoremap <CR> :noh<CR><CR>
+" search for visually selected text
+vnoremap // y/<C-R>"<CR>
 
 "Custom key mappings
 inoremap jj <Esc>
