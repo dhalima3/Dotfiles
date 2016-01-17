@@ -22,6 +22,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'klen/python-mode'
 Plugin 'pangloss/vim-javascript'
+Plugin 'kana/vim-textobj-user'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
