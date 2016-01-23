@@ -99,8 +99,8 @@ set laststatus=2
 let g:airline_theme = "solarized"
 
 " Tagbar
-" Toggling tagbar
-nmap <Leader>o :TagbarToggle<CR>
+" Opening tagbar
+nmap <Leader>o :TagbarOpen fjc<CR>
 
 " Youcompleteme
 " Close omni-completion once a selection is made
