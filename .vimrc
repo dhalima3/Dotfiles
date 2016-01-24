@@ -124,12 +124,12 @@ call expand_region#custom_text_objects({
       \ })
 
 " Customize text objects for python
-let g:expand_region_text_objects_python = {
+call expand_region#custom_text_objects('python', {
       \ 'af' :0, 
       \ 'if' :0,
       \ 'ac' :0,
       \ 'ic' :0,
-      \ }
+      \ })
 
 " :PluginList       - lists configured plugins
 " :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
