@@ -25,6 +25,7 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'kana/vim-textobj-user'
 Plugin 'bps/vim-textobj-python'
 Plugin 'gregsexton/MatchTag'
+Plugin 'Raimondi/delimitMate'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -131,6 +132,9 @@ call expand_region#custom_text_objects('python', {
       \ 'ac' :0,
       \ 'ic' :0,
       \ })
+
+" DelimitMate
+let delimitMate_expand_cr = 1
 
 " :PluginList       - lists configured plugins
 " :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
