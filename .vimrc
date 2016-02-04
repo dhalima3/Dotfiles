@@ -24,7 +24,7 @@ Plugin 'klen/python-mode'
 Plugin 'pangloss/vim-javascript'
 Plugin 'kana/vim-textobj-user'
 Plugin 'bps/vim-textobj-python'
-Plugin 'Valloric/MatchTagAlways'
+Plugin 'gregsexton/MatchTag'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
