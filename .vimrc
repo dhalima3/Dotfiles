@@ -136,6 +136,9 @@ call expand_region#custom_text_objects('python', {
 " DelimitMate
 let delimitMate_expand_cr = 1
 
+" Syntastic
+let g:syntastic_javascript_checkers = ['eslint']
+
 " :PluginList       - lists configured plugins
 " :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
 " :PluginSearch foo - searches for foo; append `!` to refresh local cache
