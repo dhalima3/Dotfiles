@@ -108,6 +108,13 @@ nmap <Leader>o :TagbarOpen fjc<CR>
 " Close omni-completion once a selection is made
 let g:ycm_autoclose_preview_window_after_insertion = 1
 
+" Enable omni completion.
+autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
+autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
+autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
+autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
+
 " Python Mode
 " Solve conflict with youcompleteme
 let g:pymode_rope_complete_on_dot = 0
