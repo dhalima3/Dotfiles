@@ -146,6 +146,13 @@ let delimitMate_expand_cr = 1
 " Syntastic
 let g:syntastic_javascript_checkers = ['eslint']
 
+" Vim Fugitive
+nnoremap <leader>gs :Gstatus<CR>7j
+nnoremap <leader>gd :Gdiff<CR>
+nnoremap <leader>gc :Gcommit<CR>
+nnoremap <leader>gl :Glog<CR>
+nnoremap <leader>gp :Git push<CR>
+
 " :PluginList       - lists configured plugins
 " :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
 " :PluginSearch foo - searches for foo; append `!` to refresh local cache
