@@ -118,8 +118,9 @@ function! s:my_cr_function()
   " For no inserting <CR> key.
   "return pumvisible() ? "\<C-y>" : "\<CR>"
 endfunction
-" Tab completion for Neocomplete
+" Tab completion (shift Tab for going backwards) for Neocomplete
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<TAB>"
 " Cap maximum suggestions
 let g:neocomplete#max_list = 15
 
