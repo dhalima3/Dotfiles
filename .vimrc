@@ -110,6 +110,8 @@ let g:neocomplete#enable_at_startup = 1
 let g:neocomplete#enable_smart_case = 1
 " Tab completion for Neocomplete
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+" Cap maximum suggestions
+let g:neocomplete#max_list = 15
 
 " Youcompleteme
 " Close omni-completion once a selection is made
