@@ -123,6 +123,12 @@ inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 " Cap maximum suggestions
 let g:neocomplete#max_list = 15
 
+" Neosnippet
+" Enable snipmate compatibility mode
+let g:neosnippet#enable_snipmate_compatibility = 1
+" Tell Neosnippet about the other snippets
+let g:neosnippet#snippets_directory='~/.vim/bundle/vim-snippets/snippets'
+
 " Youcompleteme
 " Close omni-completion once a selection is made
 "let g:ycm_autoclose_preview_window_after_insertion = 1
