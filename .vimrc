@@ -105,6 +105,12 @@ let g:airline_theme = "solarized"
 " Opening tagbar
 nmap <Leader>o :TagbarOpen fjc<CR>
 
+" Neocomplete
+let g:neocomplete#enable_at_startup = 1
+let g:neocomplete#enable_smart_case = 1
+" Tab completion for Neocomplete
+inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+
 " Youcompleteme
 " Close omni-completion once a selection is made
 "let g:ycm_autoclose_preview_window_after_insertion = 1
