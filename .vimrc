@@ -111,11 +111,21 @@ nmap <Leader>o :TagbarOpen fjc<CR>
 " Neocomplete
 let g:neocomplete#enable_at_startup = 1
 let g:neocomplete#enable_smart_case = 1
-" <CR>: close popup and save indent.
-inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
-function! s:my_cr_function()
-  return (pumvisible() ? "\<C-y>" : "" ) . "\<CR>"
+" <CR> close popup and save indent or expand snippet
+function! CleverCr()
+    if pumvisible()
+        if neosnippet#expandable()
+            let exp = "\<Plug>(neosnippet_expand)"
+            return exp . neocomplete#smart_close_popup()
+        else
+            return neocomplete#smart_close_popup()
+        endif
+    else
+        return "\<CR>"
+    endif
 endfunction
+" <CR> close popup and save indent or expand snippet
+imap <expr> <CR> CleverCr()
 " Tab completion (shift Tab for going backwards) for Neocomplete
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<TAB>"
@@ -133,11 +143,12 @@ let g:neosnippet#enable_snipmate_compatibility = 1
 " Tell Neosnippet about the other snippets
 let g:neosnippet#snippets_directory='~/.vim/bundle/vim-snippets/snippets'
 " Plugin key-mappings.
-imap <C-g>     <Plug>(neosnippet_expand_or_jump)
+imap <C-k>     <Plug>(neosnippet_expand_or_jump)
 smap <C-k>     <Plug>(neosnippet_expand_or_jump)
 xmap <C-k>     <Plug>(neosnippet_expand_target)
 imap <expr><TAB> pumvisible() ? "\<C-n>" :
  \ neosnippet#expandable_or_jumpable() ? "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
+
 " Enable omni completion.
 autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
 autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
