@@ -115,12 +115,15 @@ let g:neocomplete#enable_smart_case = 1
 inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
 function! s:my_cr_function()
   return (pumvisible() ? "\<C-y>" : "" ) . "\<CR>"
-  " For no inserting <CR> key.
-  "return pumvisible() ? "\<C-y>" : "\<CR>"
 endfunction
 " Tab completion (shift Tab for going backwards) for Neocomplete
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<TAB>"
+" <Down> and <Up> cycle like <Tab> and <S-Tab>
+inoremap <expr> <Down>  pumvisible() ? "\<C-n>" : "\<Down>"
+inoremap <expr> <Up>    pumvisible() ? "\<C-p>" : "\<Up>"
+" <ESC> takes you out of insert mode and also gets rid of suggestions window
+inoremap <expr> <Esc>   pumvisible() ? "\<C-y>\<Esc>" : "\<Esc>"
 " Cap maximum suggestions
 let g:neocomplete#max_list = 15
 
@@ -129,17 +132,31 @@ let g:neocomplete#max_list = 15
 let g:neosnippet#enable_snipmate_compatibility = 1
 " Tell Neosnippet about the other snippets
 let g:neosnippet#snippets_directory='~/.vim/bundle/vim-snippets/snippets'
-
-" Youcompleteme
-" Close omni-completion once a selection is made
-"let g:ycm_autoclose_preview_window_after_insertion = 1
-
+" Plugin key-mappings.
+imap <C-g>     <Plug>(neosnippet_expand_or_jump)
+smap <C-k>     <Plug>(neosnippet_expand_or_jump)
+xmap <C-k>     <Plug>(neosnippet_expand_target)
+imap <expr><TAB> pumvisible() ? "\<C-n>" :
+ \ neosnippet#expandable_or_jumpable() ? "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
 " Enable omni completion.
 autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
 autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
 autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
+" Enable heavy omni completion.
+if !exists('g:neocomplete#sources#omni#input_patterns')
+    let g:neocomplete#sources#omni#input_patterns = {}
+endif
+"let g:neocomplete#sources#omni#input_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
+"let g:neocomplete#sources#omni#input_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
+"let g:neocomplete#sources#omni#input_patterns.c = '[^.[:digit:] *\t]\%(\.\|->\)'
+"let g:neocomplete#sources#omni#input_patterns.cpp = '[^.[:digit:] *\t]\%(\.\|->\)\|\h\w*::'
+"let g:neocomplete#sources#omni#input_patterns.ruby = '[^. *\t]\.\h\w*\|\h\w*::'
+
+" Youcompleteme
+" Close omni-completion once a selection is made
+"let g:ycm_autoclose_preview_window_after_insertion = 1
 
 " Python Mode
 " Solve conflict with youcompleteme
