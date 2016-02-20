@@ -31,6 +31,7 @@ Plugin 'kana/vim-textobj-user'
 Plugin 'bps/vim-textobj-python'
 Plugin 'gregsexton/MatchTag'
 Plugin 'Raimondi/delimitMate'
+Plugin 'nathanaelkane/vim-indent-guides'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -196,6 +197,9 @@ call expand_region#custom_text_objects('python', {
 
 " DelimitMate
 let delimitMate_expand_cr = 1
+
+" Vim-indent-guides
+let g:indent_guides_enable_on_vim_startup = 1
 
 " Syntastic
 let g:syntastic_javascript_checkers = ['eslint']
