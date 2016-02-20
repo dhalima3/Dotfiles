@@ -207,7 +207,7 @@ let g:indent_guides_enable_on_vim_startup = 1
 let g:syntastic_javascript_checkers = ['eslint']
 
 " Vim Fugitive
-nnoremap <leader>gs :Gstatus<CR>7j
+nnoremap <leader>gs :Gstatus<CR>/modified<CR>
 nnoremap <leader>gd :Gdiff<CR>
 nnoremap <leader>gc :Gcommit<CR>
 nnoremap <leader>gl :Glog<CR>
