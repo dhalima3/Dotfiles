@@ -26,6 +26,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'klen/python-mode'
 Plugin 'pangloss/vim-javascript'
+Plugin 'ternjs/tern_for_vim'
 Plugin 'kana/vim-textobj-user'
 Plugin 'bps/vim-textobj-python'
 Plugin 'gregsexton/MatchTag'
@@ -151,7 +152,7 @@ imap <expr><TAB> pumvisible() ? "\<C-n>" :
 " Enable omni completion.
 autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
 autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
-autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType javascript setlocal omnifunc=tern#Complete
 autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 " Enable heavy omni completion.
