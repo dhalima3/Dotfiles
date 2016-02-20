@@ -26,6 +26,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'klen/python-mode'
 Plugin 'bps/vim-textobj-python'
+Plugin 'davidhalter/jedi-vim'
 Plugin 'pangloss/vim-javascript'
 Plugin 'ternjs/tern_for_vim'
 Plugin 'kana/vim-textobj-user'
@@ -176,6 +177,8 @@ endif
 " Python Mode
 " Solve conflict with youcompleteme
 let g:pymode_rope_complete_on_dot = 0
+" Disable pymode rope autocompletion to avoid conflict with jedi
+let g:pymode_rope=0
 
 " Vim-expand-region
 vmap v <Plug>(expand_region_expand)
