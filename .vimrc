@@ -32,6 +32,7 @@ Plugin 'bps/vim-textobj-python'
 Plugin 'gregsexton/MatchTag'
 Plugin 'Raimondi/delimitMate'
 Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'junegunn/vim-easy-align'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
