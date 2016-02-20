@@ -77,6 +77,8 @@ let mapleader = "\<Space>"                      " Set leader to space
 nnoremap gr gd[{V%::s/<C-R>///gc<left><left><left>
 " For global replace
 nnoremap gR gD:%s/<C-R>///gc<left><left><left>
+" Stop the stupid window from popping up
+map q: :q
 
 hi Normal ctermbg=none
 
