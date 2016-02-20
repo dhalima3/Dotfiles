@@ -214,6 +214,12 @@ nnoremap <leader>gc :Gcommit<CR>
 nnoremap <leader>gl :Glog<CR>
 nnoremap <leader>gp :Git push<CR>
 
+" Vim Easy Align
+" Start interactive EasyAlign in visual mode (e.g. vipga)
+xmap ga <Plug>(EasyAlign)
+" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+nmap ga <Plug>(EasyAlign)
+
 " :PluginList       - lists configured plugins
 " :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
 " :PluginSearch foo - searches for foo; append `!` to refresh local cache
