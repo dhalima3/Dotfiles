@@ -35,6 +35,7 @@ Plugin 'gregsexton/MatchTag'
 Plugin 'Raimondi/delimitMate'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'junegunn/vim-easy-align'
+Plugin 'ntpeters/vim-better-whitespace'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -223,6 +224,9 @@ nnoremap <leader>gp :Git push<CR>
 xmap ga <Plug>(EasyAlign)
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
 nmap ga <Plug>(EasyAlign)
+
+" Vim Better Whitespace
+nnoremap <leader>ws :StripWhitespace<CR>
 
 " :PluginList       - lists configured plugins
 " :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
