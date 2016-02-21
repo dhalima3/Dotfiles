@@ -126,7 +126,7 @@ function! CleverCr()
             let exp = "\<Plug>(neosnippet_expand)"
             return exp . neocomplete#smart_close_popup()
         else
-            return neocomplete#smart_close_popup() . "\<CR>"
+            return (pumvisible() ? "\<C-y>" : "" ) . "\<CR>"
         endif
     else
         return "\<CR>"
@@ -134,10 +134,6 @@ function! CleverCr()
 endfunction
 " <CR> close popup and save indent or expand snippet
 imap <expr> <CR> CleverCr()
-inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
-    function! s:my_cr_function()
-      return (pumvisible() ? "\<C-y>" : "" ) . "\<CR>"
-    endfunction
 " Tab completion (shift Tab for going backwards) for Neocomplete
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<TAB>"
