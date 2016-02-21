@@ -83,6 +83,8 @@ nnoremap gr gd[{V%::s/<C-R>///gc<left><left><left>
 nnoremap gR gD:%s/<C-R>///gc<left><left><left>
 " Stop the stupid window from popping up
 map q: :q
+" Yank from the cursor to the end of the line
+nnoremap Y y$
 
 hi Normal ctermbg=none
 
