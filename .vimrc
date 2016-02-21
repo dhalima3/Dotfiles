@@ -1,4 +1,4 @@
-set nocompatible              " be iMproved, required           
+set nocompatible              " be iMproved, required
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
@@ -44,12 +44,12 @@ filetype plugin indent on    " required
 "Syntax and indentation
 syntax on                     " turn on syntax highlighting
 set showmatch                 " show matching braces when text indicator is over them
-"filetype plugin indent on     " enable file type detection 
+"filetype plugin indent on     " enable file type detection
 set autoindent                " align the new line indent with the previous line
 set nowrap 		              " don't wrap lines
 set expandtab		          " insert spaces, not tabs
 set tabstop=4                 " a hard TAB displays as 4 columns
-set shiftwidth=4              " indent/unident 4 columns 
+set shiftwidth=4              " indent/unident 4 columns
 set softtabstop=4             " insert/delete 4 spaces when hitting a TAB/BACKSPACE
 set backspace=2               " Backspace deletes like most programs in insert mode
 
@@ -187,17 +187,17 @@ vmap v <Plug>(expand_region_expand)
 vmap <C-v> <Plug>(expand_region_shrink)
 " Extend the global default (NOTE: Remove comments in dictionary before sourcing)
 call expand_region#custom_text_objects({
-      \ "\/\\n\\n\<CR>": 1, 
-      \ 'a]' :1, 
+      \ "\/\\n\\n\<CR>": 1,
+      \ 'a]' :1,
       \ 'ab' :1,
       \ 'aB' :1,
-      \ 'ii' :0, 
-      \ 'ai' :0, 
+      \ 'ii' :0,
+      \ 'ai' :0,
       \ })
 
 " Customize text objects for python
 call expand_region#custom_text_objects('python', {
-      \ 'af' :0, 
+      \ 'af' :0,
       \ 'if' :0,
       \ 'ac' :0,
       \ 'ic' :0,
