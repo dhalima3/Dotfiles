@@ -1,4 +1,4 @@
-set nocompatible              " be iMproved, required
+set nocompatible              " be iMproved, required           
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
@@ -125,7 +125,7 @@ function! CleverCr()
             let exp = "\<Plug>(neosnippet_expand)"
             return exp . neocomplete#smart_close_popup()
         else
-            return neocomplete#smart_close_popup()
+            return neocomplete#smart_close_popup() . "\<CR>"
         endif
     else
         return "\<CR>"
