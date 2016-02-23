@@ -187,6 +187,8 @@ let g:neocomplete#force_omni_input_patterns.python = '\%([^. \t]\.\|^\s*@\|^\s*f
 let g:pymode_rope_complete_on_dot = 0
 " Disable pymode rope autocompletion to avoid conflict with jedi
 let g:pymode_rope=0
+" Keybinding to fix python lint errors
+autocmd filetype python  nnoremap <Leader>pl :PymodeLintAuto<CR>
 
 " Jedi Vim
 let g:jedi#completions_enabled = 0
