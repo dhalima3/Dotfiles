@@ -188,7 +188,7 @@ let g:pymode_rope_complete_on_dot = 0
 " Disable pymode rope autocompletion to avoid conflict with jedi
 let g:pymode_rope=0
 " Disable code folding
-let g:pymode_folding = 1
+let g:pymode_folding = 0
 " Keybinding to fix python lint errors
 autocmd filetype python  nnoremap <Leader>pl :PymodeLintAuto<CR>
 
