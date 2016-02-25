@@ -190,7 +190,7 @@ let g:pymode_rope=0
 " Disable code folding
 let g:pymode_folding = 0
 " Keybinding to fix python lint errors
-autocmd filetype python  nnoremap <Leader>pl :PymodeLintAuto<CR>
+autocmd filetype python nnoremap <Leader>pl :PymodeLintAuto<CR>
 " Replace Python Mode's Run keybinding
 autocmd filetype python nnoremap <buffer> <Leader>r :!clear;python %<CR>
 
