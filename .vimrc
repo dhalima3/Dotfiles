@@ -33,7 +33,7 @@ Plugin 'ternjs/tern_for_vim'
 Plugin 'kana/vim-textobj-user'
 Plugin 'gregsexton/MatchTag'
 Plugin 'Raimondi/delimitMate'
-Plugin 'nathanaelkane/vim-indent-guides'
+"Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'junegunn/vim-easy-align'
 Plugin 'ntpeters/vim-better-whitespace'
 
