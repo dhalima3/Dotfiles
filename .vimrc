@@ -33,7 +33,7 @@ Plugin 'ternjs/tern_for_vim'
 Plugin 'kana/vim-textobj-user'
 Plugin 'gregsexton/MatchTag'
 Plugin 'Raimondi/delimitMate'
-"Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'junegunn/vim-easy-align'
 Plugin 'ntpeters/vim-better-whitespace'
 
@@ -224,7 +224,7 @@ call expand_region#custom_text_objects('python', {
 let delimitMate_expand_cr = 1
 
 " Vim-indent-guides
-let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_enable_on_vim_startup = 0
 
 " Syntastic
 let g:syntastic_javascript_checkers = ['eslint']
