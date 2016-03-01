@@ -1,5 +1,7 @@
 source ~/.vimrc
 let mapleader = " "
+" Enable vim-surround emulation
+set surround
 
 " copy and paste to system clipboard
 noremap <Leader>y "*y
@@ -11,10 +13,10 @@ noremap <Leader>P "*P
 nnoremap <Leader>u :action FindUsages<cr>
 nnoremap <Leader>i :action GotoImplementation<cr>
 nnoremap <Leader>sm :action GotoSuperMethod<cr>
-"nnoremap <Leader>t :action GotoTest<cr>
+nnoremap <Leader>t :action GotoTest<cr>
 nnoremap <Leader>o :action GotoFile<cr>
-nnoremap <Leader>k :action FileStructurePopup<cr>
-nnoremap <Leader><BS> :action VimFilePrevious<cr>
+"nnoremap <Leader>s :action FileStructurePopup<cr>
+nnoremap <Leader><BS> :action Back<cr>
 
 " actions
 nnoremap <Leader>r :action Run<cr>
@@ -22,3 +24,7 @@ nnoremap <Leader>d :action Debug<cr>
 nnoremap <Leader>q :action CloseContent<cr>
 nnoremap <Leader>Q :action ReopenClosedTab<cr>
 nnoremap <Leader>b :action ToggleLineBreakpoint<cr>
+
+" windows specific
+nnoremap <A-d> :action VimMotionScrollHalfPageDown<cr>
+nnoremap <A-u> :action VimMotionScrollHalfPageUp<cr>
