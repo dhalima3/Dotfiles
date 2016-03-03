@@ -106,7 +106,7 @@ vmap <Leader>P "+P
 
 " Ctrlp
 " Opening a file
-nnoremap <Leader>O :CtrlP<CR>
+nnoremap <Leader>o :CtrlP<CR>
 
 " Vim Airline
 " Fix airline not showing up until a split
@@ -116,7 +116,7 @@ let g:airline_theme = "solarized"
 
 " Tagbar
 " Opening tagbar
-nmap <Leader>o :TagbarOpen fjc<CR>
+nmap <Leader>O :TagbarOpen fjc<CR>
 
 " Neocomplete
 let g:neocomplete#enable_at_startup = 1
