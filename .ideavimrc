@@ -14,8 +14,10 @@ nnoremap <Leader>u :action FindUsages<cr>
 nnoremap <Leader>i :action GotoImplementation<cr>
 nnoremap <Leader>sm :action GotoSuperMethod<cr>
 nnoremap <Leader>t :action GotoTest<cr>
-nnoremap <Leader>O :action GotoFile<cr>
-nnoremap <Leader>o :action FileStructurePopup<cr>
+nnoremap <Leader>o :action GotoFile<cr>
+nnoremap <Leader>oc :action GotoClass<cr>
+nnoremap <Leader>os :action GotoSymbol<cr>
+nnoremap <Leader>O :action FileStructurePopup<cr>
 nnoremap <Leader><BS> :action Back<cr>
 
 " actions
