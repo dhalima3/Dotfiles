@@ -11,6 +11,7 @@ noremap <Leader>P "*P
 
 " code navigation
 nnoremap <Leader>u :action FindUsages<cr>
+nnoremap <Leader>d :action GotoDeclaration<cr>
 nnoremap <Leader>i :action GotoImplementation<cr>
 nnoremap <Leader>sm :action GotoSuperMethod<cr>
 nnoremap <Leader>t :action GotoTest<cr>
