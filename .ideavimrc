@@ -22,8 +22,8 @@ nnoremap <Leader>O :action FileStructurePopup<cr>
 nnoremap <Leader><BS> :action Back<cr>
 
 " actions
-nnoremap <Leader>r :action Run<cr>
-nnoremap <Leader>d :action Debug<cr>
+nnoremap <Leader>r :action ChooseRunConfiguration<cr>
+nnoremap <Leader>d :action ChooseDebugConfiguration<cr>
 nnoremap <Leader>q :action CloseContent<cr>
 nnoremap <Leader>Q :action ReopenClosedTab<cr>
 nnoremap <Leader>b :action ToggleLineBreakpoint<cr>
