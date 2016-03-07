@@ -11,15 +11,16 @@ noremap <Leader>P "*P
 
 " code navigation
 nnoremap <Leader>u :action FindUsages<cr>
-nnoremap <Leader>d :action GotoDeclaration<cr>
-nnoremap <Leader>i :action GotoImplementation<cr>
+nnoremap <Leader>gd :action GotoDeclaration<cr>
+nnoremap <Leader>gi :action GotoImplementation<cr>
 nnoremap <Leader>sm :action GotoSuperMethod<cr>
 nnoremap <Leader>t :action GotoTest<cr>
 nnoremap <Leader>o :action GotoFile<cr>
 nnoremap <Leader>oc :action GotoClass<cr>
 nnoremap <Leader>os :action GotoSymbol<cr>
 nnoremap <Leader>O :action FileStructurePopup<cr>
-nnoremap <Leader><BS> :action Back<cr>
+nnoremap <Leader>b :action Back<cr>
+nnoremap <Leader>f :action Forward<cr>
 
 " actions
 nnoremap <Leader>r :action ChooseRunConfiguration<cr>
