@@ -228,6 +228,10 @@ let delimitMate_expand_cr = 1
 let g:indent_guides_enable_on_vim_startup = 0
 
 " Syntastic
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 let g:syntastic_javascript_checkers = ['eslint']
 
 " Vim Fugitive
