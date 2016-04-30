@@ -56,7 +56,7 @@ set backspace=2               " Backspace deletes like most programs in insert m
 
 "Colors and appearance
 set t_Co=256
-set background=light
+set background=dark
 colorscheme solarized
 set nu                        " number lines
 set ruler                     " show ruler, current position in file
