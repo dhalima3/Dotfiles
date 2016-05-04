@@ -83,8 +83,16 @@ source $ZSH/oh-my-zsh.sh
 alias v='f -e vim' # quick opening files with vim
 alias o='a -e xdg-open' # quick opening files with xdg-open
 
+# Git shortcuts
+alias g='git'
+alias gs='git status'
+alias ga='git add'
+alias gp='git pull'
+alias gc='git commit -m $1'
+
 # The next line updates PATH for the Google Cloud SDK.
 source '/Users/Daryl/google-cloud-sdk/path.zsh.inc'
 
 # The next line enables shell command completion for gcloud.
 source '/Users/Daryl/google-cloud-sdk/completion.zsh.inc'
+bindkey "^X^_" redo
