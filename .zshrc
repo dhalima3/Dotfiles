@@ -87,7 +87,8 @@ alias o='a -e xdg-open' # quick opening files with xdg-open
 alias g='git'
 alias gs='git status'
 alias ga='git add'
-alias gp='git pull'
+alias push='git push'
+alias pull='git pull'
 alias gc='git commit -m $1'
 
 # The next line updates PATH for the Google Cloud SDK.
