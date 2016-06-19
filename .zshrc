@@ -83,6 +83,10 @@ source $ZSH/oh-my-zsh.sh
 alias v='f -e vim' # quick opening files with vim
 alias o='a -e xdg-open' # quick opening files with xdg-open
 
+# Shortcuts
+alias dl="cd ~/Downloads"
+alias p="cd ~/Github"
+
 # Git shortcuts
 alias g='git'
 alias gs='git status'
