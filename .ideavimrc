@@ -2,6 +2,8 @@ source ~/.vimrc
 let mapleader = " "
 " Enable vim-surround emulation
 set surround
+" Set relative line numbering
+set rnu
 
 " copy and paste to system clipboard
 noremap <Leader>y "*y
@@ -11,7 +13,7 @@ noremap <Leader>P "*P
 
 " code navigation
 nnoremap <Leader>u :action FindUsages<cr>
-nnoremap <Leader>d :action GotoDeclaration<cr>
+nnoremap <Leader>gd :action GotoDeclaration<cr>
 nnoremap <Leader>i :action GotoImplementation<cr>
 nnoremap <Leader>sm :action GotoSuperMethod<cr>
 nnoremap <Leader>t :action GotoTest<cr>
@@ -24,7 +26,7 @@ nnoremap <Leader>f :action Forward<cr>
 
 " actions
 nnoremap <Leader>r :action ChooseRunConfiguration<cr>
-nnoremap <Leader>rd :action ChooseDebugConfiguration<cr>
+nnoremap <Leader>d :action ChooseDebugConfiguration<cr>
 nnoremap <Leader>q :action CloseContent<cr>
 nnoremap <Leader>Q :action ReopenClosedTab<cr>
 nnoremap <Leader>b :action ToggleLineBreakpoint<cr>
