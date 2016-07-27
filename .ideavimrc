@@ -4,12 +4,14 @@ let mapleader = " "
 set surround
 " Set relative line numbering
 set rnu
+" Integrate with the system clipboard
+set clipboard=unnamedplus
 
 " copy and paste to system clipboard
-noremap <Leader>y "*y
-noremap <Leader>Y "*Y
-noremap <Leader>p "*p
-noremap <Leader>P "*P
+"noremap <Leader>y "*y
+"noremap <Leader>Y "*Y
+"noremap <Leader>p "*p
+"noremap <Leader>P "*P
 
 " code navigation
 nnoremap <Leader>u :action FindUsages<cr>
