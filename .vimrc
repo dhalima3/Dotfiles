@@ -70,8 +70,8 @@ set ignorecase
 set smartcase
 " incremental search (as string is being typed in)
 set incsearch
-" pressing enter key will clear highlighted search results
-nnoremap <CR> :noh<CR><CR>
+" Clear highlighting on escape in normal mode
+nnoremap <silent> <esc> :noh<cr><esc>
 " search for visually selected text
 vnoremap // y/<C-R>"<CR>
 
