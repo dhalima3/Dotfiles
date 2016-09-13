@@ -7,6 +7,7 @@
 - link:
     ~/.dotfiles: ''
     ~/.vimrc: vimrc
+    ~/.ideavimrc: ideavimrc
     ~/.zsh: zsh
     ~/.zshrc: zshrc
     ~/.oh-my-zsh/custom/themes: oh-my-zsh/custom/themes/
