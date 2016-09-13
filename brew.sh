@@ -33,6 +33,7 @@ brew cask install vlc
 brew cask install licecap
 brew cask install android-file-transfer
 brew cask install teamviewer
+brew cask install bettertouchtool
 brew cask install seil
 
 # Internet
@@ -55,6 +56,7 @@ brew cask install virtualbox
 # Install Dev Homebrews
 # Install Xcode before macvim
 # brew install macvim --with-lua --custom-icons --override-system-vi
+brew install zsh
 brew install python
 brew install python3
 brew install node
