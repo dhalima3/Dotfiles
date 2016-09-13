@@ -19,3 +19,12 @@ brew install findutils
 
 # Install Bash 4
 brew install bash
+
+# Install Dev Homebrews
+# Install Xcode before macvim
+# brew install macvim --with-lua --custom-icons --override-system-vi
+brew install python
+brew install python3
+brew install ruby
+brew install wget
+brew install git
