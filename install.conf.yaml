@@ -6,6 +6,7 @@
 
 - link:
     ~/.dotfiles: ''
+    ~/.vim: vim
     ~/.vimrc: vimrc
     ~/.ideavimrc: ideavimrc
     ~/.zsh: zsh
