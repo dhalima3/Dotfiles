@@ -3,3 +3,5 @@ My dotfiles
 ./brew.sh
 ./zsh.sh
 .macos
+
+Launch vim and run :PluginInstall
