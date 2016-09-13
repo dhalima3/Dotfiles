@@ -29,7 +29,6 @@ brew cask install dropbox
 brew cask install evernote
 brew cask install rescuetime
 brew cask install flux
-brew cask install lastpass
 brew cask install vlc
 brew cask install licecap
 brew cask install android-file-transfer
