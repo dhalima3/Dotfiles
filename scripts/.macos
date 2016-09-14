@@ -210,3 +210,4 @@ echo "Done. Note that some of these changes require a logout/restart to take eff
 ###############################################################################
 # Clock shows day of the week
 # Battery shows percentage
+# Use function keys without pressing fn
