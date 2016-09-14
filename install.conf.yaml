@@ -9,6 +9,7 @@
     ~/.vim: vim
     ~/.vimrc: vimrc
     ~/.ideavimrc: ideavimrc
+    ~/.fonts: fonts
     ~/.zsh: zsh
     ~/.zshrc: zshrc
     ~/.oh-my-zsh/custom/themes: oh-my-zsh/custom/themes/

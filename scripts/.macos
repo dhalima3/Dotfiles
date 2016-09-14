@@ -172,7 +172,13 @@ defaults write com.apple.Safari SuppressSearchSuggestions -bool true
 ###############################################################################
 
 # Install the Solarized Dark theme for iTerm
-open "${HOME}/init/Solarized Dark.itermcolors"
+open "${HOME}/.fonts/Solarized Dark.itermcolors"
+
+# Install the Solarized Light theme for iTerm
+open "${HOME}/.fonts/Solarized Light.itermcolors"
+
+# Install the Solarized Light theme for iTerm
+open "${HOME}/.fonts/Meslo LG M DZ Regular for Powerline.otf"
 
 ###############################################################################
 # Dashboard                                                                   #
