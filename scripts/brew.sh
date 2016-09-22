@@ -39,6 +39,7 @@ brew cask install teamviewer
 brew cask install bettertouchtool
 brew cask install seil
 brew install youtube-dl
+brew install ffmpeg
 
 # Internet
 brew cask install google-chrome
