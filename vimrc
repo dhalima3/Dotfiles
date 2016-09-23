@@ -109,6 +109,12 @@ vmap <Leader>P "+P
 " Opening a file
 nnoremap <Leader>o :CtrlP<CR>
 
+" NerdTree
+autocmd vimenter * NERDTree
+autocmd vimenter * wincmd p
+autocmd BufWinEnter * NERDTreeFind
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
 " Vim Airline
 " Fix airline not showing up until a split
 set laststatus=2
