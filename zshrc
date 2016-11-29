@@ -10,7 +10,7 @@ ZSH_THEME="powerlevel9k/powerlevel9k"
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status)
 
-plugins=(git extract pep8 pyenv pylint python node npm bower osx brew fasd)
+plugins=(git extract pep8 pyenv pylint python node npm bower osx brew fasd z)
 
 # User configuration
 
