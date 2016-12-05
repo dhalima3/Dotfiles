@@ -34,7 +34,6 @@ brew cask install vlc
 brew cask install licecap
 brew cask install android-file-transfer
 brew cask install airdroid
-brew cask install lastpass
 brew cask install cleanmymac
 brew cask install teamviewer
 brew cask install bettertouchtool
@@ -89,3 +88,4 @@ brew cleanup
 # Wunderlist
 # Microsoft Office
 # Pomodoro Time
+# Lastpass
