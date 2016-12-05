@@ -51,6 +51,8 @@ brew cask install jadengeller-helium
 brew cask install spotify
 brew cask install google-play-music-desktop-player
 brew cask install music-manager
+brew cask install amazon-drive
+brew cask install odrive
 
 # Dev
 brew cask install java
