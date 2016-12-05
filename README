@@ -5,6 +5,4 @@ My dotfiles
 .macos
 
 Launch vim and run :PluginInstall
-Apply iterm colors in iTerm through iTerm -> preferences -> profiles -> colors -> load presets.
-Set font in iTerm (14px is my personal preference) (iTerm -> Preferences -> Profiles -> Text -> Change Font).
-Restart iTerm
+Sync iterm and alfred with settings in dropbox.  Restart.
