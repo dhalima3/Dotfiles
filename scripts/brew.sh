@@ -67,6 +67,7 @@ brew cask install webstorm
 brew cask install postman
 brew cask install dash
 brew cask install virtualbox
+brew install virtualbox
 
 # Install Dev Homebrews
 # Install Xcode before macvim
