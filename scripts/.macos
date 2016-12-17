@@ -195,6 +195,12 @@ defaults write com.apple.dashboard devmode -bool true
 defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
 
 ###############################################################################
+# Screenshots                                                                 #
+###############################################################################
+
+defaults write com.apple.screencapture location ~/Documents/Screenshots
+
+###############################################################################
 # Kill affected applications                                                  #
 ###############################################################################
 
