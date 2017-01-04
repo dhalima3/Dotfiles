@@ -17,6 +17,10 @@ plugins=(git extract pep8 pyenv pylint python node npm bower osx brew fasd z)
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
+function chpwd() {
+  ls
+}
+
 # Oh my zsh
 source $ZSH/oh-my-zsh.sh
 

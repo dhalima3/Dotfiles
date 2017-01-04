@@ -12,7 +12,6 @@ alias o='a -e xdg-open' # quick opening files with xdg-open
 # # Shortcuts
 alias dl="cd ~/Downloads"
 alias p="cd ~/Github"
-alias cdl='cd "$A" && ls'
 
 # # Git shortcuts
 alias g='git'
