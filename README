@@ -2,6 +2,7 @@ My dotfiles
 
 ./brew.sh
 ./zsh.sh
+./npm.sh
 .macos
 
 Launch vim and run :PluginInstall
