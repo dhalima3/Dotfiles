@@ -13,6 +13,7 @@
     ~/.zsh: zsh
     ~/.zshrc: zshrc
     ~/.oh-my-zsh/custom/themes: oh-my-zsh/custom/themes/
+    ~/.gitconfig: gitconfig
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
