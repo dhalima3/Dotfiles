@@ -7,3 +7,4 @@ My dotfiles
 
 Launch vim and run :PluginInstall
 Sync iterm and alfred with settings in dropbox.  Restart.
+Complete checklist.md
