@@ -7,6 +7,11 @@ scripts/zsh.sh
 scripts/npm.sh
 scripts/.macos
 
+### File Syncing
+* Odrive 
+    * Add temp folder to favorites sidebar
+* Dropbox
+
 ### Alfred
 * Register Powerpack License
 * Disable Spotlight, replace with Alfred 3
@@ -20,7 +25,15 @@ scripts/.macos
     * Change the caps lock key > Change the caps lock key > keycode > 53
     * Other Keys > Change Escape > keycode > 57
 * Move trackpad tracking speed to fastest setting
+* Click > Light
 * [Enable 3 finger drag](https://support.apple.com/en-us/HT204609)
+
+### BetterTouchTool
+* Load license and import settings from Odrive/Encrypted folder
+
+### Chrome
+#### Vimium
+* Custom Key Mappings
 
 Launch vim and run :PluginInstall
 Sync iterm and alfred with settings in dropbox.  Restart.
