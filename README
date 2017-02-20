@@ -1,9 +1,11 @@
 My dotfiles
 
-./brew.sh
-./zsh.sh
-./npm.sh
-.macos
+## Run the following scripts:
+scripts/brew.sh
+scripts/zsh.sh
+./install
+scripts/npm.sh
+scripts/.macos
 
 Launch vim and run :PluginInstall
 Sync iterm and alfred with settings in dropbox.  Restart.
