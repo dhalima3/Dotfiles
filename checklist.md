@@ -31,6 +31,9 @@
 ### BetterTouchTool
 * Load license and import settings from Odrive/Encrypted folder
 
+### Rescuetime
+* Launch and login
+
 ### Calendar:
 * Preferences -> Alerts -> Birthdays (Set to None)
 
