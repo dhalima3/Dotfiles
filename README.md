@@ -15,6 +15,13 @@ scripts/.macos
 * Set up Settings Syncing
     * Advanced > Syncing > Set Sync Folder
 
+### Keyboard/Mouse
+* Use Seil to switch caps lock key with escape
+    * Change the caps lock key > Change the caps lock key > keycode > 53
+    * Other Keys > Change Escape > keycode > 57
+* Move trackpad tracking speed to fastest setting
+* [Enable 3 finger drag](https://support.apple.com/en-us/HT204609)
+
 Launch vim and run :PluginInstall
 Sync iterm and alfred with settings in dropbox.  Restart.
 Complete checklist.md
