@@ -36,6 +36,8 @@
 * Launch and login
 
 ### Calendar:
+* Add Google Account
+* Uncheck Google Calendars: Contacts, Visits, Birthdays (Other)
 * Preferences -> Alerts -> Birthdays (Set to None)
 
 ### Chrome
