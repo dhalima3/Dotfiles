@@ -1,5 +1,14 @@
 # Settings to Change on New Computer:
 
+### Keyboard/Mouse
+* Move trackpad tracking speed to fastest setting
+* Enable one finger tap to click
+* Click > Light
+* Use Seil to switch caps lock key with escape
+    * Change the caps lock key > Change the caps lock key > keycode > 53
+    * Other Keys > Change Escape > keycode > 57
+* [Enable 3 finger drag](https://support.apple.com/en-us/HT204609)
+
 ### File Syncing
 * Odrive
     * Add temp folder to favorites sidebar
@@ -19,14 +28,6 @@
     * Change Alfred hotkey to command + space
 * Set up Settings Syncing
     * Advanced > Syncing > Set Sync Folder
-
-### Keyboard/Mouse
-* Use Seil to switch caps lock key with escape
-    * Change the caps lock key > Change the caps lock key > keycode > 53
-    * Other Keys > Change Escape > keycode > 57
-* Move trackpad tracking speed to fastest setting
-* Click > Light
-* [Enable 3 finger drag](https://support.apple.com/en-us/HT204609)
 
 ### BetterTouchTool
 * Load license and import settings from Odrive/Encrypted folder
