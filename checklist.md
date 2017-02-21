@@ -38,6 +38,7 @@
 * Preferences -> Alerts -> Birthdays (Set to None)
 
 ### Chrome
+* Make default browser, sign in to load history, extensions, etc
 #### Vimium
 * Excluded URLs and keys
 
