@@ -74,3 +74,4 @@ so: http://stackoverflow.com/search?q=%s
 # YouTube
 y: http://www.youtube.com/results?search_query=%s
 ```
+* Remove f in Characters used for link hints
