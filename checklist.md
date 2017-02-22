@@ -1,5 +1,8 @@
 # Settings to Change on New Computer:
 
+### General Settings
+* Show battery percentage
+
 ### Keyboard/Mouse
 * Move trackpad tracking speed to fastest setting
 * Enable one finger tap to click
@@ -75,3 +78,8 @@ so: http://stackoverflow.com/search?q=%s
 y: http://www.youtube.com/results?search_query=%s
 ```
 * Remove f in Characters used for link hints
+
+#### Google Dictionary
+* Uncheck "Display pop-up when I double-click a word"
+* Check " Display pop-up when I select a word or phrase".  Make sure trigger key is Command.
+* Change trigger key when Display pop-up when I double-click a word
