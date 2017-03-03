@@ -116,6 +116,7 @@ autocmd vimenter * NERDTree
 autocmd vimenter * wincmd p
 autocmd BufWinEnter * NERDTreeFind
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+map <Leader>n :NERDTreeToggle<CR>
 
 " Vim Airline
 " Fix airline not showing up until a split
