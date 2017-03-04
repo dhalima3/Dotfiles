@@ -2,6 +2,8 @@
 
 ### General Settings
 * Show battery percentage
+* Change startup programs
+    * Lastpass
 
 ### Keyboard/Mouse
 * Move trackpad tracking speed to fastest setting
@@ -20,6 +22,7 @@
 ### Iterm
 * Sync settings with Dropbox
     * Preferences > Load Preferences From a custom folder or URL > Point to Dropbox folder
+* [Enable Session Restoration](https://www.iterm2.com/documentation-restoration.html)
 
 ### Vim
 * Install Plugins via Vundle by running :PluginInstall
