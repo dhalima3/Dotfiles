@@ -38,6 +38,8 @@ Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'junegunn/vim-easy-align'
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'suan/vim-instant-markdown'
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
 Plugin 'elzr/vim-json'
 
 " All of your Plugins must be added before the following line
