@@ -172,7 +172,7 @@ imap <expr><TAB> pumvisible() ? "\<C-n>" :
  \ neosnippet#expandable_or_jumpable() ? "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
 " Enable omni completion.
 autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
-autocmd BufNewFile,BufRead *.md set filetype=markdown
+autocmd BufNewFile,BufRead *.md set spell filetype=markdown
 autocmd FileType html setlocal omnifunc=htmlcomplete#CompleteTags
 autocmd FileType javascript setlocal omnifunc=tern#Complete
 autocmd FileType python setlocal omnifunc=jedi#completions
