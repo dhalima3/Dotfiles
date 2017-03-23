@@ -91,6 +91,8 @@ nnoremap gR gD:%s/<C-R>///gc<left><left><left>
 map q: :q
 " Yank from the cursor to the end of the line
 nnoremap Y y$
+" Leader w to save
+nnoremap <Leader>w :w<CR>
 
 hi Normal ctermbg=none
 
