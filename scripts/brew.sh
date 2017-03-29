@@ -73,7 +73,7 @@ brew install virtualbox
 
 # Install Dev Homebrews
 # Install Xcode before macvim
-brew install macvim --HEAD --with-cscope --with-lua --with-override-system-vim --with-luajit --with-python
+brew install macvim --with-override-system-vim
 brew install tmux
 brew install zsh
 brew install python
