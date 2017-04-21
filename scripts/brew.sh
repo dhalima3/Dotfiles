@@ -55,6 +55,7 @@ brew cask install google-play-music-desktop-player
 brew cask install music-manager
 brew cask install amazon-drive
 brew cask install odrive
+brew cask install private-internet-access
 
 # Dev
 brew cask install java
