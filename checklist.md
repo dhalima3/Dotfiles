@@ -4,6 +4,7 @@
 * Show battery percentage
 * Change startup programs
     * Lastpass
+* Play sound effects through Internal Speakers.  Sound > Play sound effects through
 
 ### Keyboard/Mouse
 * Move trackpad tracking speed to fastest setting
