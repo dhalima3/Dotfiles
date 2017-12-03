@@ -39,6 +39,7 @@ brew cask install teamviewer
 brew cask install bettertouchtool
 brew cask install the-unarchiver
 brew cask install seil
+brew cask install appcleaner
 brew cask install macdown
 brew install youtube-dl
 brew install ffmpeg
