@@ -26,6 +26,7 @@ brew install caskroom/cask/brew-cask
 # Utilities
 brew cask install alfred
 brew cask install dropbox
+brew cask install google-backup-and-sync
 brew cask install evernote
 brew cask install rescuetime
 brew cask install flux
