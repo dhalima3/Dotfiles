@@ -28,6 +28,9 @@ source $ZSH/oh-my-zsh.sh
 # Aliases
 source ~/.zsh/aliases.zsh
 
+#zsh-autosuggestions
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'
