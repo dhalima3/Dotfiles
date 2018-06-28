@@ -66,9 +66,7 @@ brew cask install atom
 brew cask install sublime-text
 brew cask install android-studio
 brew cask install genymotion
-brew cask install intellij-idea
-brew cask install pycharm
-brew cask install webstorm
+brew cask install jetbrains-toolbox
 brew cask install postman
 brew cask install dash
 brew cask install virtualbox
