@@ -61,6 +61,7 @@ brew cask install private-internet-access
 
 # Dev
 brew cask install java
+brew install go
 brew cask install iterm2
 brew cask install atom
 brew cask install sublime-text
