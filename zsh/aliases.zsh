@@ -14,6 +14,7 @@ alias dl="cd ~/Downloads"
 alias p="cd ~/Github"
 alias rm="trash"
 alias ij="open -b com.jetbrains.intellij"
+Alias goland="/usr/local/bin/goland"
 
 # # Git shortcuts
 alias g='git'
