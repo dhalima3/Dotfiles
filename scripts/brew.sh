@@ -72,6 +72,7 @@ brew cask install postman
 brew cask install dash
 brew cask install virtualbox
 brew install virtualbox
+brew install dep
 brew install zsh-autosuggestions
 
 # Install Dev Homebrews
