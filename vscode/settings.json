@@ -1,0 +1,107 @@
+{
+    "git.confirmSync": false,
+    "telemetry.enableTelemetry": false,
+    "telemetry.enableCrashReporter": false,
+    "gitlens.advanced.messages": {
+        "suppressShowKeyBindingsNotice": true
+    },
+    "gitlens.settings.mode": "advanced",
+    "gitlens.menus": {
+        "editor": {
+            "blame": false,
+            "clipboard": true,
+            "compare": true,
+            "details": true,
+            "history": true,
+            "remote": true
+        },
+        "editorGroup": {
+            "blame": true,
+            "compare": true,
+            "history": false,
+            "remote": false
+        },
+        "editorTab": {
+            "compare": false,
+            "history": false,
+            "remote": true
+        },
+        "explorer": {
+            "compare": true,
+            "history": true,
+            "remote": true
+        }
+    },
+    "gitlens.hovers.currentLine.over": "line",
+    "git.autofetch": true,
+    "gitlens.gitExplorer.location": "scm",
+    "editor.lineNumbers": "relative",
+    "editor.minimap.enabled": false,
+    "editor.rulers": [
+        120
+    ],
+    "files.autoSave": "afterDelay",
+    "vim.disableAnnoyingNeovimMessage": true,
+    "vim.useSystemClipboard": true,
+    "vim.leader": "<space>",
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["<leader>", "i"],
+            "commands": [
+                "editor.action.goToDeclaration"
+            ]
+        },
+        {
+            "before": ["<leader>", "u"],
+            "commands": [
+                "editor.action.referenceSearch.trigger"
+            ]
+        },
+        {
+            "before": ["<leader>", "b"],
+            "commands": [
+                "editor.debug.action.toggleBreakpoint"
+            ]
+        },
+        {
+            "before": ["<leader>", "d"],
+            "commands": [
+                "workbench.action.debug.start"
+            ]
+        }
+    ],
+    "workbench.colorTheme": "Darcula Theme from IntelliJ",
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.statusBar.feedback.visible": false,
+    "workbench.editor.showTabs": true,
+    "cSpell.userWords": [
+        "UUID",
+        "curr",
+        "mutex",
+        "ppid",
+        "repo",
+        "xrange"
+    ],
+    "python.linting.pep8Enabled": true,
+    "python.linting.pep8Args": ["--max-line-length=120" ],
+    "python.linting.pylintEnabled": true,
+    "python.jediEnabled": false,
+    "window.openFoldersInNewWindow": "on",
+    "search.exclude": {
+        "**/.history": true
+    },
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "workbench.list.openMode": "doubleClick",
+    "gitlens.blame.format": "${author|7?} ${message|20?} ${agoOrDate|14-}",
+    "gitlens.gitExplorer.files.compact": false,
+    "gitlens.codeLens.enabled": false,
+    "gitlens.currentLine.enabled": false,
+    "gitlens.blame.highlight.locations": [
+        "gutter",
+        "line",
+        "overview"
+    ],
+    "sync.gist": "aef92116b0641855b23896dcdb963cc0",
+    "sync.quietSync": true,
+    "sync.autoUpload": true
+}
