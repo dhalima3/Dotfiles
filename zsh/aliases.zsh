@@ -9,14 +9,14 @@
 alias v='f -e vim' # quick opening files with vim
 alias o='a -e xdg-open' # quick opening files with xdg-open
 
-# # Shortcuts
+## Shortcuts
 alias dl="cd ~/Downloads"
 alias p="cd ~/Github"
 alias rm="trash"
 alias ij="open -b com.jetbrains.intellij"
 Alias goland="/usr/local/bin/goland"
 
-# # Git shortcuts
+## Git shortcuts
 alias g='git'
 alias gs='git status'
 alias ga='git add'
@@ -25,3 +25,6 @@ alias pull='git pull'
 alias gc='git commit -m $1'
 alias gco='git checkout'
 alias glog='git log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset"'
+
+## NPM
+alias nrd='npm run dev'
