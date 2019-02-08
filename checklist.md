@@ -5,6 +5,7 @@
 * Change startup programs
     * Lastpass
 * Play sound effects through Internal Speakers.  Sound > Play sound effects through
+* Show date and day of week in menu bar. Date & Time > Clock > Show Date, Show the day of the week
 
 ### Keyboard/Mouse
 * Move trackpad tracking speed to fastest setting
