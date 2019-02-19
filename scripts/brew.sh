@@ -39,7 +39,7 @@ brew cask install cleanmymac
 brew cask install teamviewer
 brew cask install bettertouchtool
 brew cask install the-unarchiver
-Brew cask install karabiner-elements
+brew cask install karabiner-elements
 brew cask install appcleaner
 brew cask install macdown
 brew install youtube-dl
