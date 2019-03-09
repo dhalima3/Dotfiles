@@ -83,6 +83,7 @@ brew install tmux
 brew install zsh
 brew install python
 brew install python3
+brew install pipenv
 brew install node
 brew install ruby
 brew install wget
