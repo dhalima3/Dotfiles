@@ -71,6 +71,7 @@ brew cask install jetbrains-toolbox
 brew cask install postman
 brew cask install dash
 brew cask install virtualbox
+brew cask install go2shell
 brew install virtualbox
 brew install dep
 brew install fswatch
