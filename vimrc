@@ -115,6 +115,7 @@ vmap <Leader>P "+P
 " Ctrlp
 " Opening a file
 nnoremap <Leader>o :CtrlPMRU<CR>
+let g:ctrlp_mruf_relative = 1
 
 " NerdTree
 autocmd vimenter * NERDTree
