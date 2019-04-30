@@ -9,9 +9,9 @@ export TERM="xterm-256color"
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status virtualenv)
 
-plugins=(git extract pep8 pyenv pylint python node npm bower osx brew fasd z)
+plugins=(git extract pep8 pyenv pylint python node npm bower osx brew fasd z virtualenv)
 
 # User configuration
 
