@@ -62,7 +62,7 @@ set backspace=2               " Backspace deletes like most programs in insert m
 "Colors and appearance
 set t_Co=256
 set background=dark
-colorscheme dracula
+colorscheme solarized
 set nu                        " number lines
 set ruler                     " show ruler, current position in file
 
@@ -128,7 +128,7 @@ map <Leader>n :NERDTreeToggle<CR>
 " Fix airline not showing up until a split
 set laststatus=2
 " Set airline theme
-let g:airline_theme = "dracula"
+let g:airline_theme = "solarized"
 
 " Tagbar
 " Opening tagbar
