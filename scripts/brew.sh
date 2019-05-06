@@ -76,6 +76,7 @@ brew install virtualbox
 brew install dep
 brew install fswatch
 brew install zsh-autosuggestions
+brew install ripgrep
 
 # Install Dev Homebrews
 # Install Xcode before macvim
