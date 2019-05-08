@@ -1,0 +1,29 @@
+{
+  "Algorithm Solution Template": {
+    "prefix": "sol",
+    "body": [
+        "# $1"
+        "# Time Complexity: $2",
+        "# Space Complexity: $3"
+    ],
+    "description": "Algorithm Solution - Python"
+  },
+  "Algorithm Test Template": {
+    "prefix": "test",
+    "body": [
+        "class Tests(unittest.TestCase):",
+        "   sol = Solution()",
+        "",
+        "   def test_$1(self):",
+        "       self.$1_test_cases(self.sol)",
+        "",
+        "   def $1_test_cases(self, sol):",
+        "       self.assertEqual($3, sol.$1($2))",
+        "",
+        "",
+        "if __name__ == '__main__':"
+        "   unittest.main()"
+    ],
+    "description": "Algorithm Test - Python"
+  },
+}
