@@ -3,5 +3,7 @@
 	editor = vim
 [pull]
 	rebase = true
+[rebase]
+	autoStash = true
 [diff]
 	tool = vscode
