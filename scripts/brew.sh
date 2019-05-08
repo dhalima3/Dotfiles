@@ -40,6 +40,7 @@ brew cask install teamviewer
 brew cask install bettertouchtool
 brew cask install the-unarchiver
 brew cask install karabiner-elements
+brew cask install dozer
 brew cask install appcleaner
 brew cask install macdown
 brew install youtube-dl
@@ -72,11 +73,14 @@ brew cask install postman
 brew cask install dash
 brew cask install virtualbox
 brew cask install go2shell
+brew cask install charles
 brew install virtualbox
 brew install dep
 brew install fswatch
 brew install zsh-autosuggestions
 brew install ripgrep
+brew install fzf
+$(brew --prefix)/opt/fzf/install
 
 # Install Dev Homebrews
 # Install Xcode before macvim
