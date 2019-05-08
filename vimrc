@@ -118,9 +118,9 @@ nnoremap <Leader>o :CtrlPMRU<CR>
 let g:ctrlp_mruf_relative = 1
 
 " NerdTree
-autocmd vimenter * NERDTree
-autocmd vimenter * wincmd p
-autocmd BufWinEnter * NERDTreeFind
+" Open NERDTree when vim starts up but focus on main editor
+autocmd vimenter * NERDTree | wincmd p
+" Close vim if only window left open is NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 map <Leader>n :NERDTreeToggle<CR>
 
@@ -133,6 +133,13 @@ let g:airline_theme = "solarized"
 " Tagbar
 " Opening tagbar
 nmap <Leader>O :TagbarOpen fjc<CR>
+
+" Vim Gitgutter
+set updatetime=100
+nmap ∆ <Plug>GitGutterNextHunk " map alt+j to go to next hunk
+nmap ˚ <Plug>GitGutterPrevHunk " map alt+k to go to previous hunk
+nmap <Leader>ga <Plug>GitGutterStageHunk
+nmap <Leader>gz <Plug>GitGutterUndoHunk
 
 " Neocomplete
 let g:neocomplete#enable_at_startup = 1
