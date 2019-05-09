@@ -42,6 +42,7 @@ Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'ajorgensen/vim-markdown-toc'
 Plugin 'elzr/vim-json'
+Plugin 'sheerun/vim-polyglot'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -249,13 +250,6 @@ let delimitMate_expand_cr = 1
 
 " Vim-indent-guides
 let g:indent_guides_enable_on_vim_startup = 0
-
-" Syntastic
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-let g:syntastic_javascript_checkers = ['eslint']
 
 " Vim Fugitive
 nnoremap <leader>gs :Gstatus<CR>7j
