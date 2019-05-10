@@ -1,107 +1,196 @@
 {
-    "git.confirmSync": false,
-    "telemetry.enableTelemetry": false,
-    "telemetry.enableCrashReporter": false,
-    "gitlens.advanced.messages": {
-        "suppressShowKeyBindingsNotice": true
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "breadcrumbs.enabled": true,
+  "cSpell.userWords": [
+    "UUID",
+    "curr",
+    "mutex",
+    "ppid",
+    "repo",
+    "xrange"
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+    // "source.organizeImports": true
+  },
+  "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
+  "editor.formatOnSave": false,
+  "editor.lineNumbers": "relative",
+  "editor.minimap.enabled": false,
+  "editor.rulers": [
+    120
+  ],
+  "editor.snippetSuggestions": "top",
+  "editor.suggestSelection": "first",
+  // "files.autoSave": "afterDelay",
+  "files.autoSave": "onFocusChange",
+  "files.trimTrailingWhitespace": true,
+  "git.autoStash": true,
+  "git.autofetch": true,
+  "git.confirmSync": true,
+  "gitlens.advanced.messages": {
+    "suppressShowKeyBindingsNotice": true
+  },
+  "gitlens.blame.format": "${author|7?} ${message|20?} ${agoOrDate|14-}",
+  "gitlens.blame.highlight.locations": [
+    "overview",
+    "gutter",
+    "line"
+  ],
+  "gitlens.codeLens.enabled": false,
+  "gitlens.currentLine.enabled": false,
+  "gitlens.gitExplorer.files.compact": false,
+  "gitlens.gitExplorer.location": "scm",
+  "gitlens.hovers.currentLine.over": "line",
+  "gitlens.menus": {
+    "editor": {
+      "blame": false,
+      "clipboard": true,
+      "compare": true,
+      "details": true,
+      "history": true,
+      "remote": true
     },
-    "gitlens.settings.mode": "advanced",
-    "gitlens.menus": {
-        "editor": {
-            "blame": false,
-            "clipboard": true,
-            "compare": true,
-            "details": true,
-            "history": true,
-            "remote": true
-        },
-        "editorGroup": {
-            "blame": true,
-            "compare": true,
-            "history": false,
-            "remote": false
-        },
-        "editorTab": {
-            "compare": false,
-            "history": false,
-            "remote": true
-        },
-        "explorer": {
-            "compare": true,
-            "history": true,
-            "remote": true
-        }
+    "editorGroup": {
+      "blame": true,
+      "compare": true,
+      "history": false,
+      "remote": false
     },
-    "gitlens.hovers.currentLine.over": "line",
-    "git.autofetch": true,
-    "gitlens.gitExplorer.location": "scm",
-    "editor.lineNumbers": "relative",
-    "editor.minimap.enabled": false,
-    "editor.rulers": [
-        120
-    ],
-    "files.autoSave": "afterDelay",
-    "vim.disableAnnoyingNeovimMessage": true,
-    "vim.useSystemClipboard": true,
-    "vim.leader": "<space>",
-    "vim.normalModeKeyBindingsNonRecursive": [
-        {
-            "before": ["<leader>", "i"],
-            "commands": [
-                "editor.action.goToDeclaration"
-            ]
-        },
-        {
-            "before": ["<leader>", "u"],
-            "commands": [
-                "editor.action.referenceSearch.trigger"
-            ]
-        },
-        {
-            "before": ["<leader>", "b"],
-            "commands": [
-                "editor.debug.action.toggleBreakpoint"
-            ]
-        },
-        {
-            "before": ["<leader>", "d"],
-            "commands": [
-                "workbench.action.debug.start"
-            ]
-        }
-    ],
-    "workbench.colorTheme": "Darcula Theme from IntelliJ",
-    "workbench.iconTheme": "vscode-icons",
-    "workbench.statusBar.feedback.visible": false,
-    "workbench.editor.showTabs": true,
-    "cSpell.userWords": [
-        "UUID",
-        "curr",
-        "mutex",
-        "ppid",
-        "repo",
-        "xrange"
-    ],
-    "python.linting.pep8Enabled": true,
-    "python.linting.pep8Args": ["--max-line-length=120" ],
-    "python.linting.pylintEnabled": true,
-    "python.jediEnabled": false,
-    "window.openFoldersInNewWindow": "on",
-    "search.exclude": {
-        "**/.history": true
+    "editorTab": {
+      "compare": false,
+      "history": false,
+      "remote": true
     },
-    "workbench.editor.enablePreviewFromQuickOpen": false,
-    "workbench.list.openMode": "doubleClick",
-    "gitlens.blame.format": "${author|7?} ${message|20?} ${agoOrDate|14-}",
-    "gitlens.gitExplorer.files.compact": false,
-    "gitlens.codeLens.enabled": false,
-    "gitlens.currentLine.enabled": false,
-    "gitlens.blame.highlight.locations": [
-        "gutter",
-        "line",
-        "overview"
-    ],
-    "sync.gist": "aef92116b0641855b23896dcdb963cc0",
-    "sync.quietSync": true,
-    "sync.autoUpload": true
+    "explorer": {
+      "compare": true,
+      "history": true,
+      "remote": true
+    }
+  },
+  "gitlens.settings.mode": "advanced",
+  "gitlens.views.repositories.files.layout": "tree",
+  "gitlens.views.repositories.location": "scm",
+  "gitlens.views.search.files.layout": "list",
+  "go.languageServerExperimentalFeatures": {
+    "format": true,
+    "autoComplete": true
+  },
+  "go.useLanguageServer": true,
+  //   "javascript.implicitProjectConfig.checkJs": true,
+  "local-history.saveDelay": 300,
+  "prettier.eslintIntegration": true,
+  "python.formatting.autopep8Args": [
+    "--max-line-length=120"
+  ],
+  // "python.formatting.blackPath": "/Users/darylh/.local/share/virtualenvs/black-sfK7EZbx/bin/black",
+  // "python.formatting.blackArgs": ["--line-length", "120"],
+  "python.formatting.provider": "black",
+  // Currently using jedi instead of python language server. Change once refactoring in language server is faster
+  "python.jediEnabled": true,
+  "python.linting.pep8Args": [
+    "--max-line-length=120"
+  ],
+  "python.linting.pep8Enabled": true,
+  "python.linting.pylintEnabled": true,
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/.history": true,
+    "**/.idea": true,
+    "**/vendor": true
+  },
+  "search.location": "panel",
+  "search.showLineNumbers": false,
+  "sync.autoUpload": true,
+  "sync.gist": "aef92116b0641855b23896dcdb963cc0",
+  "sync.quietSync": true,
+  "telemetry.enableCrashReporter": false,
+  "telemetry.enableTelemetry": false,
+  "terminal.integrated.fontFamily": "Meslo LG M DZ for Powerline",
+  "todo-tree.customHighlight": {
+    "TODO": {},
+    "FIXME": {}
+  },
+  "todo-tree.defaultHighlight": {
+    "foreground": "green",
+    "type": "none"
+  },
+  "todohighlight.isEnable": true,
+  "vim.disableAnnoyingNeovimMessage": true,
+  "vim.leader": "<space>",
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "<leader>",
+        "i"
+      ],
+      "commands": [
+        "editor.action.goToDeclaration"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "u"
+      ],
+      "commands": [
+        "editor.action.referenceSearch.trigger"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "b"
+      ],
+      "commands": [
+        "editor.debug.action.toggleBreakpoint"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "d"
+      ],
+      "commands": [
+        "workbench.action.debug.start"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "r"
+      ],
+      "commands": [
+        "python.execInTerminal"
+      ],
+      "when": "editorFocus && editorLangId == 'python'"
+    },
+    // {
+    //   "before": [
+    //     "<leader>",
+    //     "r"
+    //   ],
+    //   "commands": [
+    //     "code-runner.run"
+    //   ]
+    // },
+  ],
+  "vim.useSystemClipboard": true,
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "window.openFoldersInNewWindow": "on",
+  "window.title": "${activeEditorLong},${separator}${rootName}",
+  "workbench.activityBar.visible": false,
+  "workbench.colorCustomizations": {
+    "terminal.foreground": "#839496",
+    "terminal.background": "#193549",
+    "focusBorder": "#ffc600",
+  },
+  "workbench.colorTheme": "Cobalt2",
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "workbench.editor.showTabs": true,
+  "workbench.list.openMode": "doubleClick",
+  "workbench.sideBar.location": "right",
+  "workbench.statusBar.feedback.visible": false,
 }
