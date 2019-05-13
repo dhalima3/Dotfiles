@@ -139,6 +139,8 @@ nmap <Leader>O :TagbarOpen fjc<CR>
 set updatetime=100
 nmap ∆ <Plug>GitGutterNextHunk " map alt+j to go to next hunk
 nmap ˚ <Plug>GitGutterPrevHunk " map alt+k to go to previous hunk
+nmap j <Plug>GitGutterNextHunk " map alt+j to go to next hunk
+nmap k <Plug>GitGutterPrevHunk " map alt+k to go to previous hunk
 nmap <Leader>ga <Plug>GitGutterStageHunk
 nmap <Leader>gz <Plug>GitGutterUndoHunk
 
