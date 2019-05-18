@@ -12,17 +12,17 @@
     "prefix": "test",
     "body": [
         "class Tests(unittest.TestCase):",
-        "   sol = Solution()",
+        "    sol = Solution()",
         "",
-        "   def test_$1(self):",
-        "       self.$1_test_cases(self.sol)",
+        "    def test_$1(self):",
+        "        self.$1_test_cases(self.sol)",
         "",
-        "   def $1_test_cases(self, sol):",
-        "       self.assertEqual($3, sol.$1($2))",
+        "    def $1_test_cases(self, sol):",
+        "        self.assertEqual($3, sol.$1($2))",
         "",
         "",
         "if __name__ == '__main__':"
-        "   unittest.main()"
+        "    unittest.main()"
     ],
     "description": "Algorithm Test - Python"
   },
