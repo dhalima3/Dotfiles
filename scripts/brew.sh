@@ -91,6 +91,7 @@ brew install python
 brew install python3
 brew install pipenv
 brew install node
+brew install yarn
 brew install ruby
 brew install wget
 brew install git

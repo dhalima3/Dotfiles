@@ -17,8 +17,8 @@
 * [Enable 3 finger drag](https://support.apple.com/en-us/HT204609)
 
 ### File Syncing
-* Odrive
-    * Add temp folder to favorites sidebar
+* Onedrive
+    * Add Temp folder to favorites sidebar
 * Dropbox
 
 ### Iterm
@@ -40,6 +40,8 @@
 * Disable Spotlight, replace with Alfred 3
     * Remove Spotlight shortcut by opening Keyboard > Shortcuts > Spotlight > Show Spotlight Search
     * Change Alfred hotkey to command + space
+* Exclude folders from Spotlight search
+    * go, golang, Github, CS 6310- TA folders
 * Set up Settings Syncing
     * Advanced > Syncing > Set Sync Folder
 
