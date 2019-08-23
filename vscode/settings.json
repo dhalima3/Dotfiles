@@ -81,14 +81,22 @@
   "go.useLanguageServer": true,
   //   "javascript.implicitProjectConfig.checkJs": true,
   "local-history.saveDelay": 300,
+  "macros": {
+    "maximizeEditorHidePanels": [
+      "workbench.action.closePanel",
+      "workbench.action.maximizeEditor",
+    ]
+  },
   "prettier.eslintIntegration": true,
+  "python.autoComplete.extraPaths": ["~/Github/PracticeProblems/Leetcode/"],
   "python.formatting.autopep8Args": [
     "--max-line-length=120"
   ],
   // "python.formatting.blackPath": "/Users/darylh/.local/share/virtualenvs/black-sfK7EZbx/bin/black",
   // "python.formatting.blackArgs": ["--line-length", "120"],
   "python.formatting.provider": "black",
-  // Currently using jedi instead of python language server. Change once refactoring in language server is faster
+  // Currently using jedi instead of python language server.
+  // Change once refactoring in language server is faster. Also remove, importmagic python extension
   "python.jediEnabled": true,
   "python.linting.pep8Args": [
     "--max-line-length=120"
@@ -188,9 +196,27 @@
     "focusBorder": "#ffc600",
   },
   "workbench.colorTheme": "Cobalt2",
-  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "workbench.editor.enablePreviewFromQuickOpen": true,
+  "workbench.editor.enablePreview": true,
   "workbench.editor.showTabs": true,
   "workbench.list.openMode": "doubleClick",
   "workbench.sideBar.location": "right",
   "workbench.statusBar.feedback.visible": false,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "explorer.openEditors.visible": 1,
+  // TODO remove if this doesn't fix terminal issues
+  "terminal.integrated.experimentalRefreshOnResume": true,
+  "go.gopath": "~/golang",
+  "terminal.integrated.rendererType": "dom",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }

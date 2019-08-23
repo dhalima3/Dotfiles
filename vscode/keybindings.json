@@ -301,7 +301,8 @@
   },
   {
     "key": "shift+cmd+9",
-    "command": "git.viewHistory"
+    // "command": "git.viewHistory"
+    "command": "gitlens.showLineHistoryView"
   },
   {
     "key": "alt+9",
@@ -434,5 +435,39 @@
     "key": "f4",
     "command": "-editor.action.goToDeclaration",
     "when": "editorHasDefinitionProvider && editorTextFocus"
-  }
+  },
+  {
+    "key": "cmd+shift+f12",
+    "command": "macros.maximizeEditorHidePanels"
+  },
+  {
+    "key": "ctrl+r",
+    "command": "python.execInTerminal",
+    "when": "editorFocus && editorLangId == 'python'"
+  },
+  {
+    "key": "shift+cmd+]",
+    "command": "workbench.action.terminal.focusNext",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "shift+cmd+]",
+    "command": "-workbench.action.terminal.focusNext",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "cmd+w",
+    "command": "workbench.action.terminal.kill",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "cmd+2",
+    "command": "workbench.files.action.focusOpenEditorsView",
+    "when": "workbench.explorer.openEditorsView.active"
+  },
+  {
+    "key": "cmd+k e",
+    "command": "-workbench.files.action.focusOpenEditorsView",
+    "when": "workbench.explorer.openEditorsView.active"
+  },
 ]
