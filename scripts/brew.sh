@@ -87,6 +87,7 @@ brew install zsh
 brew install python
 brew install python3
 brew install pipenv
+brew install pyenv
 brew install node
 brew install yarn
 brew install ruby
