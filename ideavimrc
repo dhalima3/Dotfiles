@@ -36,3 +36,7 @@ nnoremap <Leader>b :action ToggleLineBreakpoint<cr>
 " windows specific
 nnoremap <A-d> :action VimMotionScrollHalfPageDown<cr>
 nnoremap <A-u> :action VimMotionScrollHalfPageUp<cr>
+
+" Disable bell sounds
+set visualbell
+set noerrorbells
