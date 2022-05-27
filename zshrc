@@ -20,10 +20,14 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
 # Golang
 export GOPATH=$HOME/golang
-export GOROOT=/usr/local/opt/go/libexec
+#export GOROOT=/Users/darylh/golang/go1.18
 export GOBIN=$GOPATH/bin
 export PATH=$PATH:$GOPATH/bin
-export PATH=$PATH:$GOROOT/bin
+#export PATH=$PATH:$GOROOT/bin
+
+# Python
+alias python=python3
+alias vi="nvim"
 
 function chpwd() {
   ls
@@ -59,3 +63,21 @@ if [[ -n $SSH_CONNECTION ]]; then
 else
   export EDITOR='mvim'
 fi
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# https://www.ioannispoulakas.com/2020/02/22/how-to-speed-up-shell-load-while-using-nvm/
+# Add default node to path
+# export PATH=~/.nvm/versions/node/v14.15.5/bin:$PATH
+
+# Load NVM
+# export NVM_DIR=~/.nvm
+# [[ -s "$NVM_DIR/nvm.sh" ]] && source "$NVM_DIR/nvm.sh" --no-use
+
+#source /Users/darylh/Library/Preferences/org.dystroy.broot/launcher/bash/br
+#export PATH="$HOME/.jenv/bin:$PATH"
+#eval "$(jenv init -)"
+
+#[[ -s "/Users/darylh/.gvm/scripts/gvm" ]] && source "/Users/darylh/.gvm/scripts/gvm"
+
+export PATH="$HOME/.poetry/bin:$PATH"
