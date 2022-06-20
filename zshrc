@@ -1,3 +1,12 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+zmodload zsh/zprof
+
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
@@ -6,12 +15,28 @@ export ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 export TERM="xterm-256color"
-ZSH_THEME="powerlevel9k/powerlevel9k"
+# ZSH_THEME="powerlevel10k/powerlevel10k"
 
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status virtualenv)
 
-plugins=(git extract pep8 pyenv pylint python node npm bower osx brew fasd z virtualenv)
+plugins=(
+  #git
+  #extract
+  #pep8
+  #pyenv
+  #pylint
+  #python
+  #node
+  #npm
+  #bower
+  #osx
+  #brew
+  #fasd
+  z
+  #virtualenv
+  zsh-prompt-benchmark
+)
 
 # User configuration
 
@@ -40,7 +65,8 @@ source $ZSH/oh-my-zsh.sh
 source ~/.zsh/aliases.zsh
 
 #zsh-autosuggestions
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+#source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+#ZSH_AUTOSUGGEST_MANUAL_REBIND=1
 
 # Ignore duplicates in history
 setopt HIST_IGNORE_ALL_DUPS
@@ -81,3 +107,8 @@ fi
 #[[ -s "/Users/darylh/.gvm/scripts/gvm" ]] && source "/Users/darylh/.gvm/scripts/gvm"
 
 export PATH="$HOME/.poetry/bin:$PATH"
+source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
+source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

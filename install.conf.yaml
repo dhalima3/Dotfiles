@@ -19,6 +19,9 @@
     ~/Library/Application Support/Code/User/keybindings.json: vscode/keybindings.json
     ~/Library/Application Support/Code/User/snippets: vscode/snippets/
     ~/.config/karabiner/karabiner.json: karabiner/karabiner.json
+    ~/.grc/grc.conf: grc/grc.conf
+    ~/.grc/conf.go-test: grc/conf.go-test
+    ~/.grc/conf.go-run: grc/conf.go-run
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]

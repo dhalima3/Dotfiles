@@ -28,6 +28,7 @@ brew cask install alfred
 brew cask install dropbox
 brew cask install google-backup-and-sync
 brew cask install evernote
+#brew cask install notion
 brew cask install ticktick
 brew cask install rescuetime
 brew cask install flux
@@ -35,15 +36,21 @@ brew cask install anki
 brew cask install vlc
 brew cask install licecap
 brew cask install android-file-transfer
+brew install scrcpy
 brew cask install teamviewer
 brew cask install bettertouchtool
 brew cask install the-unarchiver
 brew cask install karabiner-elements
 brew cask install dozer
 brew cask install appcleaner
+brew cask install authy
 brew cask install macdown
+brew cask install calibre
 brew install youtube-dl
 brew install ffmpeg
+brew cask install kap
+brew install gabrie30/utils/ghorg # quickly clone entire org repos
+brew install switchaudio-osx # used for change audio shortcut
 
 # Internet
 brew cask install google-chrome
@@ -69,25 +76,30 @@ brew cask install virtualbox
 brew cask install go2shell
 brew cask install charles
 brew cask install docker
+brew install postgres
 brew install virtualbox
 brew install dep
 brew install protobuf
 brew install fswatch
 brew install zsh-autosuggestions
+brew install romkatv/powerlevel10k/powerlevel10k
+echo "source $(brew --prefix)/opt/powerlevel10k/powerlevel10k.zsh-theme" >>~/.zshrc
 brew install ripgrep
 brew install terraform
+brew install grc
 brew install fzf
 $(brew --prefix)/opt/fzf/install
 
 # Install Dev Homebrews
 # Install Xcode before macvim
-brew install macvim
+brew install neovim
 brew install tmux
 brew install zsh
 brew install python
 brew install python3
 brew install pipenv
 brew install pyenv
+brew install pyenv-virtualenv
 brew install node
 brew install yarn
 brew install ruby
@@ -95,6 +107,8 @@ brew install wget
 brew install git
 brew cask install android-sdk
 brew cask install android-ndk
+brew install rustup
+rustup-init
 
 # Remove outdated versions from the cellar
 brew cleanup
