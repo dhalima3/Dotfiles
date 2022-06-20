@@ -26,16 +26,17 @@ brew install caskroom/cask/brew-cask
 # Utilities
 brew cask install alfred
 brew cask install dropbox
-brew cask install google-backup-and-sync
-brew cask install evernote
 #brew cask install notion
 brew cask install ticktick
+brew cask install remnote
 brew cask install rescuetime
 brew cask install flux
 brew cask install anki
 brew cask install vlc
 brew cask install licecap
+brew cask install kap
 brew cask install android-file-transfer
+brew install bitwarden
 brew install scrcpy
 brew cask install teamviewer
 brew cask install bettertouchtool
@@ -48,7 +49,6 @@ brew cask install macdown
 brew cask install calibre
 brew install youtube-dl
 brew install ffmpeg
-brew cask install kap
 brew install gabrie30/utils/ghorg # quickly clone entire org repos
 brew install switchaudio-osx # used for change audio shortcut
 
@@ -56,8 +56,9 @@ brew install switchaudio-osx # used for change audio shortcut
 brew cask install google-chrome
 brew cask install firefox
 brew cask install brave-browser
-brew cask install franz
 brew cask install slack
+brew cask install zoom
+brew cask install discord
 brew cask install spotify
 brew cask install private-internet-access
 
@@ -71,11 +72,13 @@ brew cask install android-studio
 brew cask install genymotion
 brew cask install jetbrains-toolbox
 brew cask install postman
+brew cask install postico
 brew cask install dash
 brew cask install virtualbox
 brew cask install go2shell
 brew cask install charles
 brew cask install docker
+brew cask install blurred
 brew install postgres
 brew install virtualbox
 brew install dep
@@ -117,5 +120,7 @@ brew cleanup
 # Xcode
 # Amphetamine
 # Microsoft Office
-# Lastpass
 # Helium
+# Due
+# Effortless
+# Negative PDF Reader
