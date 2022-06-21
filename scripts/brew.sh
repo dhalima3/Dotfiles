@@ -68,7 +68,7 @@ brew install --cask spotify
 brew install --cask private-internet-access
 
 # Dev
-brew install --cask java
+brew install java
 brew install go
 brew install --cask iterm2
 brew install --cask visual-studio-code
