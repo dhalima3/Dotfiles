@@ -1,8 +1,13 @@
 #!/bin/sh
 
+# Install Xcode CLT if it isn't already installed
+if ! xcode-select -p 1>/dev/null; then
+  xcode-select --install
+fi
+
 # Install homebrew if it isn't already installed
 if ! hash brew 2> /dev/null; then
-    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
 # Use latest package definitions
@@ -24,61 +29,61 @@ brew install bash
 brew install caskroom/cask/brew-cask
 
 # Utilities
-brew cask install alfred
-brew cask install dropbox
-#brew cask install notion
-brew cask install ticktick
-brew cask install remnote
-brew cask install rescuetime
-brew cask install flux
-brew cask install anki
-brew cask install vlc
-brew cask install licecap
-brew cask install kap
-brew cask install android-file-transfer
+brew install --cask alfred
+brew install --cask dropbox
+#brew install --cask notion
+brew install --cask ticktick
+brew install --cask remnote
+brew install --cask rescuetime
+brew install --cask flux
+brew install --cask anki
+brew install --cask vlc
+brew install --cask licecap
+brew install --cask kap
+brew install --cask android-file-transfer
 brew install bitwarden
 brew install scrcpy
-brew cask install teamviewer
-brew cask install bettertouchtool
-brew cask install the-unarchiver
-brew cask install karabiner-elements
-brew cask install dozer
-brew cask install appcleaner
-brew cask install authy
-brew cask install macdown
-brew cask install calibre
+brew install --cask teamviewer
+brew install --cask bettertouchtool
+brew install --cask the-unarchiver
+brew install --cask karabiner-elements
+brew install --cask dozer
+brew install --cask appcleaner
+brew install --cask authy
+brew install --cask macdown
+brew install --cask calibre
 brew install youtube-dl
 brew install ffmpeg
 brew install gabrie30/utils/ghorg # quickly clone entire org repos
 brew install switchaudio-osx # used for change audio shortcut
 
 # Internet
-brew cask install google-chrome
-brew cask install firefox
-brew cask install brave-browser
-brew cask install slack
-brew cask install zoom
-brew cask install discord
-brew cask install spotify
-brew cask install private-internet-access
+brew install --cask google-chrome
+brew install --cask firefox
+brew install --cask brave-browser
+brew install --cask slack
+brew install --cask zoom
+brew install --cask discord
+brew install --cask spotify
+brew install --cask private-internet-access
 
 # Dev
-brew cask install java
+brew install --cask java
 brew install go
-brew cask install iterm2
-brew cask install visual-studio-code
-brew cask install sublime-text
-brew cask install android-studio
-brew cask install genymotion
-brew cask install jetbrains-toolbox
-brew cask install postman
-brew cask install postico
-brew cask install dash
-brew cask install virtualbox
-brew cask install go2shell
-brew cask install charles
-brew cask install docker
-brew cask install blurred
+brew install --cask iterm2
+brew install --cask visual-studio-code
+brew install --cask sublime-text
+brew install --cask android-studio
+brew install --cask genymotion
+brew install --cask jetbrains-toolbox
+brew install --cask postman
+brew install --cask postico
+brew install --cask dash
+brew install --cask virtualbox
+brew install --cask go2shell
+brew install --cask charles
+brew install --cask docker
+brew install --cask blurred
 brew install postgres
 brew install virtualbox
 brew install dep
@@ -108,8 +113,8 @@ brew install yarn
 brew install ruby
 brew install wget
 brew install git
-brew cask install android-sdk
-brew cask install android-ndk
+brew install --cask android-sdk
+brew install --cask android-ndk
 brew install rustup
 rustup-init
 
