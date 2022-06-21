@@ -113,8 +113,8 @@ brew install yarn
 brew install ruby
 brew install wget
 brew install git
-brew install --cask android-sdk
-brew install --cask android-ndk
+brew install android-commandlinetools
+brew install gradle
 brew install rustup
 rustup-init
 
