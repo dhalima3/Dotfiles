@@ -39,6 +39,7 @@ plugins=(
 )
 
 # User configuration
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 # export MANPATH="/usr/local/man:$MANPATH"
