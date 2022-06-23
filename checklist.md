@@ -102,3 +102,10 @@ ye: https://www.yelp.com/search?find_desc=%s&src=opensearch
 * Uncheck "Display pop-up when I double-click a word"
 * Check " Display pop-up when I select a word or phrase".  Make sure trigger key is Command.
 * Change trigger key when Display pop-up when I double-click a word
+
+### Backup Settings
+* Check your Git repos for any uncommitted changes
+* Check Downloads folders
+* Check open browser tabs for ALL profiles
+* Go through app list and see if there's any local data that hasn't been backed up
+* Back up zsh history
