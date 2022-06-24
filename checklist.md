@@ -9,6 +9,7 @@
 * Bluetooth > Show Bluetooth in menu bar
 * Keyboard > Use F1, F2, etc. keys as standard function key
 * Screenshot App > Options > Change Save Location to Onedrive folder
+* Turn off Notifications for Messages
 
 ### Trackpad/Mouse
 * Trackpad > Click > Light
