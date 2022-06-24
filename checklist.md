@@ -7,7 +7,7 @@
 * Show date and day of week in menu bar. Date & Time > Clock > Show Date, Show the day of the week
 * Change Display to be 'More Space'
 * Bluetooth > Show Bluetooth in menu bar
-* Keyboard > Show Input menu in menu bar
+* Keyboard > Use F1, F2, etc. keys as standard function key
 * Screenshot App > Options > Change Save Location to Onedrive folder
 
 ### Trackpad/Mouse
