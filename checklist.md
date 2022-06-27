@@ -10,6 +10,7 @@
 * Keyboard > Use F1, F2, etc. keys as standard function key
 * Screenshot App > Options > Change Save Location to Onedrive folder
 * Turn off Notifications for Messages
+* [Display time with seconds. System Preferences > Dock & Menu Bar > Clock and check "Display the time with seconds"](https://apple.stackexchange.com/questions/417686/how-can-i-show-seconds-on-macos-bigsurs-menu-bar-clock#:~:text=On%20macOS%20Big%20Sur%2C%20go,Display%20the%20time%20with%20seconds%22.)
 
 ### Trackpad/Mouse
 * Trackpad > Click > Light
