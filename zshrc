@@ -35,13 +35,14 @@ plugins=(
   #fasd
   z
   #virtualenv
-  zsh-prompt-benchmark
+  #zsh-prompt-benchmark
 )
 
 # User configuration
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="/usr/local/bin:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # Golang
@@ -50,10 +51,6 @@ export GOPATH=$HOME/golang
 export GOBIN=$GOPATH/bin
 export PATH=$PATH:$GOPATH/bin
 #export PATH=$PATH:$GOROOT/bin
-
-# Python
-alias python=python3
-alias vi="nvim"
 
 function chpwd() {
   ls
@@ -108,8 +105,7 @@ fi
 #[[ -s "/Users/darylh/.gvm/scripts/gvm" ]] && source "/Users/darylh/.gvm/scripts/gvm"
 
 export PATH="$HOME/.poetry/bin:$PATH"
-source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
-source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
+source /opt/homebrew/opt/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
