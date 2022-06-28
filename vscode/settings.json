@@ -9,19 +9,51 @@
     "mutex",
     "ppid",
     "repo",
-    "xrange"
+    "xrange",
+    "zillow"
   ],
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
   "editor.codeActionsOnSave": {
-    "source.fixAll": true
+    // "source.fixAll": true
     // "source.organizeImports": true
   },
-  "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
+  // "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": "'ss02', 'ss03', 'ss05'",
   "editor.formatOnSave": false,
-  "editor.lineNumbers": "relative",
+  "editor.lineNumbers": "on",
   "editor.minimap.enabled": false,
   "editor.rulers": [
     120
   ],
+  "editor.semanticTokenColorCustomizations": {
+    "enabled": true, // enable for all themes
+    "[Cobalt2]": {
+      "enabled": true,
+      "rules": {
+        // "type":  "#ff628c",
+        // "namespace": "#00897B",
+        // "function": "#00BCD4",
+        // "variable": "#42A5F5",
+        // "number": "#90A4AE",
+        // "string": {
+        //     "foreground": "#90A4AE",
+        //     "italic": true
+        // },
+        // "comment": {
+        //     "foreground": "#546E7A",
+        //     "fontStyle": "italic"
+        // },
+        "variable.readonly.defaultLibrary": "#ff628c",
+        // "macro": "#7E57C2",
+        // "keyword": "#7986CB",
+        // "operator": "#9575CD",
+        // "type.modification": "#00897B",
+        // "punctuation": "#A1887F"
+      }
+    }
+  },
   "editor.snippetSuggestions": "top",
   "editor.suggestSelection": "first",
   // "files.autoSave": "afterDelay",
@@ -30,6 +62,8 @@
   "git.autoStash": true,
   "git.autofetch": true,
   "git.confirmSync": true,
+  "gitlab.instanceUrl": "https://gitlab.oc.zillow.com/",
+  "gitlab.showIssueLinkOnStatusBar": false,
   "gitlens.advanced.messages": {
     "suppressShowKeyBindingsNotice": true
   },
@@ -74,11 +108,12 @@
   "gitlens.views.repositories.files.layout": "tree",
   "gitlens.views.repositories.location": "scm",
   "gitlens.views.search.files.layout": "list",
-  "go.languageServerExperimentalFeatures": {
-    "format": true,
-    "autoComplete": true
+  "[go]": {
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    }
   },
-  "go.useLanguageServer": true,
   //   "javascript.implicitProjectConfig.checkJs": true,
   "local-history.saveDelay": 300,
   "macros": {
@@ -87,8 +122,9 @@
       "workbench.action.maximizeEditor",
     ]
   },
-  "prettier.eslintIntegration": true,
-  "python.autoComplete.extraPaths": ["~/Github/PracticeProblems/Leetcode/"],
+  "python.autoComplete.extraPaths": [
+    "~/Github/PracticeProblems/Leetcode/"
+  ],
   "python.formatting.autopep8Args": [
     "--max-line-length=120"
   ],
@@ -97,35 +133,39 @@
   "python.formatting.provider": "black",
   // Currently using jedi instead of python language server.
   // Change once refactoring in language server is faster. Also remove, importmagic python extension
-  "python.jediEnabled": true,
-  "python.linting.pep8Args": [
-    "--max-line-length=120"
+  "python.jediEnabled": false,
+  "vsintellicode.python.completionsEnabled": true,
+  "python.linting.pycodestyleArgs": [
+    "--max-line-length=120",
+    "--ignore=W191" // indentation contains tabs (W191)
   ],
-  "python.linting.pep8Enabled": true,
-  "python.linting.pylintEnabled": true,
+  "python.linting.pycodestyleEnabled": false,
+  // "python.linting.pylintEnabled": true,
   "search.exclude": {
     "**/node_modules": true,
     "**/.history": true,
     "**/.idea": true,
     "**/vendor": true
   },
-  "search.location": "panel",
   "search.showLineNumbers": false,
   "sync.autoUpload": true,
   "sync.gist": "aef92116b0641855b23896dcdb963cc0",
   "sync.quietSync": true,
   "telemetry.enableCrashReporter": false,
   "telemetry.enableTelemetry": false,
-  "terminal.integrated.fontFamily": "Meslo LG M DZ for Powerline",
-  "todo-tree.customHighlight": {
-    "TODO": {},
-    "FIXME": {}
-  },
-  "todo-tree.defaultHighlight": {
-    "foreground": "green",
-    "type": "none"
-  },
-  "todohighlight.isEnable": true,
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.external.osxExec": "iTerm.app",
+  "terminal.integrated.fontFamily": "MesloLGS NF",
+  "terminal.integrated.fontSize": 14,
+  // "todo-tree.customHighlight": {
+  //   "TODO": {},
+  //   "FIXME": {}
+  // },
+  // "todo-tree.defaultHighlight": {
+  //   "foreground": "green",
+  //   "type": "none"
+  // },
+  // "todohighlight.isEnable": true,
   "vim.disableAnnoyingNeovimMessage": true,
   "vim.leader": "<space>",
   "vim.normalModeKeyBindingsNonRecursive": [
@@ -144,8 +184,9 @@
         "u"
       ],
       "commands": [
-        "editor.action.referenceSearch.trigger"
-      ]
+        "references-view.find",
+      ],
+      "when": "editorHasReferenceProvider"
     },
     {
       "before": [
@@ -182,7 +223,8 @@
     //   ],
     //   "commands": [
     //     "code-runner.run"
-    //   ]
+    //   ],
+    //   "when": "editorFocus && editorLangId == 'javascript'"
     // },
   ],
   "vim.useSystemClipboard": true,
@@ -198,9 +240,8 @@
   "workbench.colorTheme": "Cobalt2",
   "workbench.editor.enablePreviewFromQuickOpen": true,
   "workbench.editor.enablePreview": true,
-  "workbench.editor.showTabs": true,
+  "workbench.editor.showTabs": false,
   "workbench.list.openMode": "doubleClick",
-  "workbench.sideBar.location": "right",
   "workbench.statusBar.feedback.visible": false,
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -215,8 +256,63 @@
   // TODO remove if this doesn't fix terminal issues
   "terminal.integrated.experimentalRefreshOnResume": true,
   "go.gopath": "~/golang",
+  // "go.gopath": "/Users/darylh/.gvm/pkgsets/go1.15/global",
+  // "go.goroot": "/Users/darylh/.gvm/gos/go1.15",
   "terminal.integrated.rendererType": "dom",
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "sync.forceUpload": true,
+  "editor.cursorSurroundingLines": 5,
+  "search.useGlobalIgnoreFiles": true,
+  "todo-tree.highlights.customHighlight": {
+    "TODO": {},
+    "FIXME": {}
+  },
+  "todo-tree.highlights.defaultHighlight": {
+    "foreground": "green",
+    "type": "none"
+  },
+  // "leetcode.workspaceFolder": "/Users/darylh/Github/PracticeProblems/Leetcode",
+  "leetcode.workspaceFolder": "/Users/darylh/Github/PracticeScratch",
+  "leetcode.hint.configWebviewMarkdown": false,
+  "leetcode.hint.commandShortcut": false,
+  "leetcode.showCommentDescription": true,
+  "leetcode.defaultLanguage": "python3",
+  "leetcode.hint.commentDescription": false,
+  "todo-tree.tree.showScanModeButton": false,
+  "editor.columnSelection": false,
+  "editor.fontSize": 15,
+  "python.analysis.extraPaths": [
+    "~/Github/PracticeProblems/Leetcode/"
+  ],
+  "cSpell.enableFiletypes": [
+    "typescriptreact"
+  ],
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  // "editor.tabSize": 8,
+  "editor.cursorStyle": "line",
+  "editor.insertSpaces": false,
+  "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+  "editor.wordWrap": "off",
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  "leetcode.filePath": {
+    "default": {
+      "folder": "",
+      "filename": "${id}.${kebab-case-name}.${ext}"
+    }
+  },
+  "cSpell.language": "en,en-US",
+  "vsicons.dontShowNewVersionMessage": true,
+  "go.toolsManagement.autoUpdate": true,
+  "python.languageServer": "Pylance",
+  "python.analysis.indexing": true,
+  "files.exclude": {
+    "**/__pycache__": true
+  },
 }

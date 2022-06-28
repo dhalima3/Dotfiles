@@ -143,8 +143,8 @@
   },
   {
     "key": "cmd+3",
-    "command": "workbench.view.search",
-    "when": "editorTextFocus"
+    "command": "workbench.action.focusPanel",
+    // "when": "editorTextFocus"
   },
   {
     "key": "alt+h",
@@ -372,60 +372,72 @@
     "command": "-editor.action.dirtydiff.previous",
     "when": "editorTextFocus"
   },
-
   // START vscode vim keybindings
   // May not need these shortcuts anymore once vscodevim supports horizontal splitting
   {
     "key": "ctrl+w s",
-    "command": "workbench.action.splitEditorDown"
+    "command": "workbench.action.splitEditorDown",
+    "when": "!terminalFocus"
   },
   {
     "key": "ctrl+w v",
-    "command": "workbench.action.splitEditor"
+    "command": "workbench.action.splitEditor",
+    "when": "!terminalFocus"
   },
   {
     "key": "ctrl+w q",
-    "command": "workbench.action.closeEditorsInGroup"
+    "command": "workbench.action.closeEditorsInGroup",
+    "when": "!terminalFocus"
   },
   {
     "key": "ctrl+w l",
-    "command": "workbench.action.focusRightGroup"
+    "command": "workbench.action.focusRightGroup",
+    "when": "!terminalFocus"
   },
   {
     "key": "ctrl+w h",
-    "command": "workbench.action.focusLeftGroup"
+    "command": "workbench.action.focusLeftGroup",
+    "when": "!terminalFocus"
   },
   {
     "key": "ctrl+w j",
-    "command": "workbench.action.focusBelowGroup"
+    "command": "workbench.action.focusBelowGroup",
+    "when": "!terminalFocus"
   },
   {
     "key": "ctrl+w k",
-    "command": "workbench.action.focusAboveGroup"
+    "command": "workbench.action.focusAboveGroup",
+    "when": "!terminalFocus"
   },
   {
     "key": "ctrl+w ctrl+w",
-    "command": "workbench.action.focusNextGroup"
+    "command": "workbench.action.focusNextGroup",
+    "when": "!terminalFocus"
   },
   {
     "key": "ctrl+w w",
-    "command": "workbench.action.focusNextGroup"
+    "command": "workbench.action.focusNextGroup",
+    "when": "!terminalFocus"
   },
   {
     "key": "ctrl+w shift+L",
-    "command": "workbench.action.moveEditorToRightGroup"
+    "command": "workbench.action.moveEditorToRightGroup",
+    "when": "!terminalFocus"
   },
   {
     "key": "ctrl+w shift+H",
-    "command": "workbench.action.moveEditorToLeftGroup"
+    "command": "workbench.action.moveEditorToLeftGroup",
+    "when": "!terminalFocus"
   },
   {
     "key": "ctrl+w shift+J",
-    "command": "workbench.action.moveEditorToBelowGroup"
+    "command": "workbench.action.moveEditorToBelowGroup",
+    "when": "!terminalFocus"
   },
   {
     "key": "ctrl+w shift+K",
-    "command": "workbench.action.moveEditorToAboveGroup"
+    "command": "workbench.action.moveEditorToAboveGroup",
+    "when": "!terminalFocus"
   },
   {
     "key": "ctrl+4",
@@ -436,14 +448,43 @@
     "command": "-editor.action.goToDeclaration",
     "when": "editorHasDefinitionProvider && editorTextFocus"
   },
+  // TODO start - may be able to remove f4 shortcuts once reference-list.visible is implemented
+  // https://github.com/microsoft/vscode/issues/64533
+  {
+    "key": "f4",
+    "command": "references-view.next",
+    "when": "reference-list.hasResult && reference-list.isActive && !inReferenceSearchEditor && !referenceSearchVisible && !searchViewletVisible"
+  },
+  {
+    "key": "shift+f4",
+    "command": "references-view.prev",
+    "when": "reference-list.hasResult && reference-list.isActive && !inReferenceSearchEditor && !referenceSearchVisible && !searchViewletVisible"
+  },
+  {
+    "key": "f4",
+    "command": "search.action.focusNextSearchResult",
+    "when": "hasSearchResult && searchViewletVisible"
+  },
+  {
+    "key": "shift+f4",
+    "command": "references-view.prev",
+    "when": "reference-list.hasResult && reference-list.isActive && !inReferenceSearchEditor && !referenceSearchVisible && !searchViewletVisible"
+  },
+  // TODO end - may be able to remove f4 shortcuts once reference-list.visible is implemented
   {
     "key": "cmd+shift+f12",
     "command": "macros.maximizeEditorHidePanels"
   },
   {
     "key": "ctrl+r",
-    "command": "python.execInTerminal",
+    // "command": "python.execInTerminal",
+    "command": "leetcode.testSolution",
     "when": "editorFocus && editorLangId == 'python'"
+  },
+  {
+    "key": "ctrl+r",
+    "command": "leetcode.testSolution",
+    "when": "editorFocus && editorLangId == 'javascript'"
   },
   {
     "key": "shift+cmd+]",
@@ -470,4 +511,53 @@
     "command": "-workbench.files.action.focusOpenEditorsView",
     "when": "workbench.explorer.openEditorsView.active"
   },
+  {
+    "key": "cmd+enter",
+    "command": "leetcode.submitSolution",
+    // "when": "editorFocus && editorLangId == 'javascript'"
+    "when": "editorFocus && editorLangId == 'python'"
+  },
+  {
+    "key": "ctrl+r",
+    "command": "-workbench.action.tasks.reRunTask",
+  },
+  {
+    "key": "shift+cmd+k",
+    "command": "-editor.action.deleteLines",
+    "when": "textInputFocus && !editorReadonly"
+  },
+  // {
+  //   "key": "ctrl+w shift+L",
+  //   "command": "workbench.action.positionPanelRight",
+  //   "when": "terminalFocus"
+  // },
+  // {
+  //   "key": "ctrl+w shift+H",
+  //   "command": "workbench.action.positionPanelLeft",
+  //   "when": "terminalFocus"
+  // },
+  // {
+  //   "key": "ctrl+w shift+J",
+  //   "command": "workbench.action.positionPanelBottom",
+  //   "when": "terminalFocus"
+  // },
+  {
+    "key": "cmd+shift+f",
+    // "command": "search.action.openNewEditorToSide",
+    // "args": { "triggerSearch":true, "focusResults": false }
+  "command": "workbench.action.findInFiles"
+},
+{
+  "key": "ctrl+d",
+  "command": "-workbench.action.debug.run",
+  "when": "debuggersAvailable && !inDebugMode && !terminalFocus"
+},
+{
+  "key": "cmd+k cmd+w",
+  "command": "-workbench.action.closeAllEditors"
+},
+{
+  "key": "cmd+k cmd+w",
+  "command": "workbench.action.closeAllEditors"
+}
 ]
