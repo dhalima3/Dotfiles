@@ -10,11 +10,15 @@ if ! hash brew 2> /dev/null; then
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
+# Add homebrew to path
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 # Use latest package definitions
 brew update
 
 # Upgrade old packages (if any)
-brew upgrade --all
+brew upgrade
 
 # Install GNU core utilities (those that come with OS X are outdated)
 brew install coreutils
@@ -24,9 +28,6 @@ brew install findutils
 
 # Install Bash 4
 brew install bash
-
-# Install essential casks
-brew install caskroom/cask/brew-cask
 
 # Utilities
 brew install --cask alfred
@@ -91,7 +92,6 @@ brew install protobuf
 brew install fswatch
 brew install zsh-autosuggestions
 brew install romkatv/powerlevel10k/powerlevel10k
-echo "source $(brew --prefix)/opt/powerlevel10k/powerlevel10k.zsh-theme" >>~/.zshrc
 brew tap homebrew/cask-fonts
 brew install --cask font-fira-code
 brew install ripgrep
@@ -105,7 +105,6 @@ $(brew --prefix)/opt/fzf/install
 brew install neovim
 brew install tmux
 brew install zsh
-brew install python
 brew install python3
 brew install pipenv
 brew install pyenv
