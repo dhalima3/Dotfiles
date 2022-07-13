@@ -2,8 +2,7 @@
 
 ### General Settings
 * Change startup programs
-    * Lastpass
-* Play sound effects through Internal Speakers.  Sound > Play sound effects through
+    * Stand
 * Show date and day of week in menu bar. Date & Time > Clock > Show Date, Show the day of the week
 * Change Display to be 'More Space'
 * Bluetooth > Show Bluetooth in menu bar
@@ -11,6 +10,17 @@
 * Screenshot App > Options > Change Save Location to Onedrive folder
 * Turn off Notifications for Messages
 * [Display time with seconds. System Preferences > Dock & Menu Bar > Clock and check "Display the time with seconds"](https://apple.stackexchange.com/questions/417686/how-can-i-show-seconds-on-macos-bigsurs-menu-bar-clock#:~:text=On%20macOS%20Big%20Sur%2C%20go,Display%20the%20time%20with%20seconds%22.)
+* Download from App Store
+    * Xcode
+    * Amphetamine
+    * Helium
+    * Due
+    * Effortless
+    * Negative PDF Reader
+    * Onedrive
+* No Casks Available
+    * Stand
+    * Microsoft Office
 
 ### Trackpad/Mouse
 * Trackpad > Click > Light
@@ -31,6 +41,7 @@
     4. Select the itermcolors file
     5. Select the theme from Color Presets...
 * [Enable Session Restoration](https://www.iterm2.com/documentation-restoration.html)
+* Configure zsh theme run `p10k configure`
 
 ### Github/Gitlab
 * Generate SSH key pair and add to Github/Gitlab
@@ -47,7 +58,7 @@
     * go, golang, Github, CS 6310- TA folders
 * Change Appearance to Alfred Dark
 * Set up Settings Syncing
-    * Advanced > Syncing > Set Sync Folder
+    * Advanced > Syncing > Set Sync Folder > (Use Dropbox)
 
 ### BetterTouchTool
 * Load license and import settings from Dropbox
