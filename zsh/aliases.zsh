@@ -17,6 +17,11 @@ alias rm="trash"
 alias ij="open -b com.jetbrains.intellij"
 Alias goland="/usr/local/bin/goland"
 
+# Python
+alias python=python3
+alias vi="nvim"
+alias lvim="~/.local/bin/lvim"
+
 ## Git shortcuts
 alias g='git'
 alias gs='git status'
