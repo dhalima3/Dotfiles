@@ -559,5 +559,9 @@
 {
   "key": "cmd+k cmd+w",
   "command": "workbench.action.closeAllEditors"
+},
+{
+  "key": "shift+cmd+t",
+  "command": "relatedFiles.openTestFile"
 }
 ]
