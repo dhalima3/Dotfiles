@@ -53,6 +53,7 @@ brew install --cask appcleaner
 brew install --cask authy
 brew install --cask macdown
 brew install --cask calibre
+brew install --cask nikitabobko/tap/aerospace
 brew install youtube-dl
 brew install ffmpeg
 brew install gabrie30/utils/ghorg # quickly clone entire org repos
