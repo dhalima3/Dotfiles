@@ -52,6 +52,7 @@ brew install --cask dozer
 brew install --cask appcleaner
 brew install --cask authy
 brew install --cask macdown
+brew install --cask obsidian
 brew install --cask calibre
 brew install --cask nikitabobko/tap/aerospace
 brew install youtube-dl
