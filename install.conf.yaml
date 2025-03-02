@@ -15,6 +15,7 @@
     ~/.oh-my-zsh/custom/themes: oh-my-zsh/custom/themes/
     ~/.gitconfig: gitconfig
     ~/.gitignore: gitignore
+    ~/.aerospace.toml: aerospace.toml
     ~/.config/karabiner/karabiner.json: karabiner/karabiner.json
     ~/.grc/grc.conf: grc/grc.conf
     ~/.grc/conf.go-test: grc/conf.go-test
