@@ -13,7 +13,7 @@
 * Download from App Store
     * Xcode
     * Amphetamine
-    * Helium
+    * Klack
     * Due
     * Effortless
     * Negative PDF Reader
