@@ -16,6 +16,7 @@
     * Klack
     * Due
     * Effortless
+    * Outread
     * Negative PDF Reader
     * Onedrive
 * No Casks Available
