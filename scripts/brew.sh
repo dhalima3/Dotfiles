@@ -55,6 +55,7 @@ brew install --cask macdown
 brew install --cask obsidian
 brew install --cask calibre
 brew install --cask nikitabobko/tap/aerospace
+brew install --cask selfcontrol
 brew install youtube-dl
 brew install ffmpeg
 brew install gabrie30/utils/ghorg # quickly clone entire org repos
@@ -124,11 +125,13 @@ rustup-init
 # Remove outdated versions from the cellar
 brew cleanup
 
-# No casks available, but still want
+# No casks available, get in app store:
 # Xcode
 # Amphetamine
-# Microsoft Office
-# Helium
+# Klack
+# Microsoft Office + Onedrive
+# Outread
 # Due
 # Effortless
-# Negative PDF Reader
+# Session Pomodoro Focus Timer
+# [Stand](https://getstandapp.com/)
