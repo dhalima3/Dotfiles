@@ -56,6 +56,7 @@ brew install --cask obsidian
 brew install --cask calibre
 brew install --cask nikitabobko/tap/aerospace
 brew install --cask selfcontrol
+brew install --cask jordanbaird-ice
 brew install youtube-dl
 brew install ffmpeg
 brew install gabrie30/utils/ghorg # quickly clone entire org repos
