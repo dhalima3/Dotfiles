@@ -15,7 +15,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 export TERM="xterm-256color"
-# ZSH_THEME="powerlevel10k/powerlevel10k"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status virtualenv)
@@ -39,7 +39,6 @@ plugins=(
 )
 
 # User configuration
-echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 export PATH="/usr/local/bin:$PATH"
@@ -105,7 +104,6 @@ fi
 #[[ -s "/Users/darylh/.gvm/scripts/gvm" ]] && source "/Users/darylh/.gvm/scripts/gvm"
 
 export PATH="$HOME/.poetry/bin:$PATH"
-source /opt/homebrew/opt/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
