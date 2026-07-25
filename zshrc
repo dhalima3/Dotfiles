@@ -39,11 +39,7 @@ export PATH="/usr/local/bin:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # Golang
-export GOPATH=$HOME/golang
-#export GOROOT=/Users/darylh/golang/go1.18
-export GOBIN=$GOPATH/bin
-export PATH=$PATH:$GOPATH/bin
-#export PATH=$PATH:$GOROOT/bin
+export PATH="$HOME/go/bin:$PATH"
 
 function chpwd() {
   ls
@@ -95,9 +91,6 @@ fi
 #export PATH="$HOME/.jenv/bin:$PATH"
 #eval "$(jenv init -)"
 
-#[[ -s "/Users/darylh/.gvm/scripts/gvm" ]] && source "/Users/darylh/.gvm/scripts/gvm"
-
-export PATH="$HOME/.poetry/bin:$PATH"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
