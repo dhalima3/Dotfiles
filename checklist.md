@@ -7,17 +7,18 @@
 * Change Display to be 'More Space'
 * Bluetooth > Show Bluetooth in menu bar
 * Keyboard > Use F1, F2, etc. keys as standard function key
-* Screenshot App > Options > Change Save Location to Onedrive folder
+* Screenshot App > Options > Change Save Location to Onedrive folder (Double check - should be done by running .macos)
 * Turn off Notifications for Messages
 * [Display time with seconds. System Preferences > Dock & Menu Bar > Clock and check "Display the time with seconds"](https://apple.stackexchange.com/questions/417686/how-can-i-show-seconds-on-macos-bigsurs-menu-bar-clock#:~:text=On%20macOS%20Big%20Sur%2C%20go,Display%20the%20time%20with%20seconds%22.)
 * Download from App Store
     * Xcode
     * Amphetamine
+    * Spokenly
     * Klack
     * Due
-    * Effortless
+    * Bitwarden
+    * Session Pomodoro Focus Timer
     * Outread
-    * Negative PDF Reader
     * Onedrive
 * No Casks Available
     * Stand
@@ -30,27 +31,28 @@
 ### File Syncing
 * Onedrive
     * Add Temp folder to favorites sidebar
-* Dropbox
+* Google Drive
 
 ### Iterm
 * Sync settings with Dropbox
-    * Preferences > Load Preferences From a custom folder or URL > Point to Dropbox folder
+    * Preferences > Load Preferences From a custom folder or URL > Point to Onedrive > Apps and Backups
 * Activate theme
     1. iTerm2 > Preferences > Profiles > Colors Tab
     2. Open the Color Presets... drop-down in the bottom right corner
     3. Select Import... from the list
-    4. Select the itermcolors file
-    5. Select the theme from Color Presets...
+    4. Select the itermcolors file from Dotfiles/fonts/
+    5. Select the 'Solarized Dark' theme from Color Presets...
 * [Enable Session Restoration](https://www.iterm2.com/documentation-restoration.html)
 * Configure zsh theme run `p10k configure`
+    * Might need to clone repo according to instructions in https://github.com/romkatv/powerlevel10k#oh-my-zsh
 
 ### Github/Gitlab
 * Generate SSH key pair and add to Github/Gitlab
 
-### Vim
+### Vim (TODO - get rid of old plugins)
 * Install Plugins via Vundle by running :PluginInstall
 
-### Alfred
+### Alfred (TODO)
 * Register Powerpack License
 * Disable Spotlight, replace with Alfred 3
     * Remove Spotlight shortcut by opening Keyboard > Shortcuts > Spotlight > Show Spotlight Search
@@ -64,7 +66,7 @@
 ### BetterTouchTool
 * Load license and import settings from Dropbox
 
-### Rescuetime
+### Rescuetime (TODO - replace with open source)
 * Launch and login
 
 ### Calendar:
@@ -72,9 +74,10 @@
 * Preferences > General > Start Week on: Monday
 * Uncheck Google Calendars: Contacts, Visits, Birthdays (Other)
 * Preferences -> Alerts -> Birthdays (Set to None)
+* Change Preferences -> 'Default Calendar'
 
 ### Brave/Chrome
-* Make default browser, sign in to load history, extensions, etc
+* Make default browser, start using sync to load history, extensions, etc
 * Settings > Appearance > Use wide address bar
 * Settings > Social Media Blocking > Allow Google login buttons on third party sites > Disable
 * Settings > Social Media Blocking > Allow Facebook logins and embedded posts > Disable
@@ -83,23 +86,12 @@
 * Turn on Ask where to save each file before downloading
 
 #### Vimium
-* Sync settings from dropbox
-* Remove f in Characters used for link hints
-
-#### Great Suspender
-* Automatically suspend tabs after: 30 minutes
-* Dark Theme
-* Disable Add The Great Suspender to right-click context menu
-
-#### Timer
-* Add shift+cmd+c shortcut
+* Sync settings from file syncing service (Onedrive/Temp)
 
 #### Custom Search Engines
 ```
 # Wikipedia
 w: http://en.wikipedia.org/wiki/Special:Search?search=%s
-# Stack Overflow
-so: http://stackoverflow.com/search?q=%s
 # YouTube
 y: http://www.youtube.com/results?search_query=%s
 # Amazon
@@ -111,11 +103,6 @@ m: https://www.google.com/maps/search/%s?hl=en
 # Yelp
 ye: https://www.yelp.com/search?find_desc=%s&src=opensearch
 ```
-
-#### Google Dictionary
-* Uncheck "Display pop-up when I double-click a word"
-* Check " Display pop-up when I select a word or phrase".  Make sure trigger key is Command.
-* Change trigger key when Display pop-up when I double-click a word
 
 ### Backup Settings
 * Check your Git repos for any uncommitted changes
