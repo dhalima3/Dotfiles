@@ -12,7 +12,6 @@
     ~/.fonts: fonts
     ~/.zsh: zsh
     ~/.zshrc: zshrc
-    ~/.oh-my-zsh/custom/themes: oh-my-zsh/custom/themes/
     ~/.gitconfig: gitconfig
     ~/.gitignore: gitignore
     ~/.aerospace.toml: aerospace.toml
