@@ -12,6 +12,7 @@
     ~/.fonts: fonts
     ~/.zsh: zsh
     ~/.zshrc: zshrc
+    ~/.p10k.zsh: p10k.zsh
     ~/.gitconfig: gitconfig
     ~/.gitignore: gitignore
     ~/.aerospace.toml: aerospace.toml

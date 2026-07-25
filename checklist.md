@@ -44,7 +44,8 @@
     4. Select the itermcolors file from Dotfiles/fonts/
     5. Select the 'Solarized Dark' theme from Color Presets...
 * [Enable Session Restoration](https://www.iterm2.com/documentation-restoration.html)
-* Configure zsh theme run `p10k configure`
+* Powerlevel10k is installed by `scripts/zsh.sh`, and its configuration is linked by `./install`.
+    * To change the prompt, run `p10k configure` and commit the updated `p10k.zsh`.
 
 ### Github/Gitlab
 * Generate SSH key pair and add to Github/Gitlab

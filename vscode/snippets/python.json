@@ -2,7 +2,7 @@
   "Algorithm Solution Template": {
     "prefix": "sol",
     "body": [
-        "# $1"
+        "# $1",
         "# Time Complexity: $2",
         "# Space Complexity: $3"
     ],
@@ -21,9 +21,9 @@
         "        self.assertEqual($3, sol.$1($2))",
         "",
         "",
-        "if __name__ == '__main__':"
+        "if __name__ == '__main__':",
         "    unittest.main()"
     ],
     "description": "Algorithm Test - Python"
-  },
+  }
 }
