@@ -77,6 +77,7 @@ brew install zsh-autosuggestions
 brew install --cask font-fira-code
 brew install ripgrep
 brew install fzf
+brew install dotbot
 
 # Install Dev Homebrews
 # Install Xcode before macvim
