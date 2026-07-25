@@ -1,5 +1,5 @@
 [core]
-	pager = diff-so-fancy | less --tabs=4 -RFX
+	pager = delta
 	editor = vim
 	excludesfile = ~/.gitignore
 [pull]
@@ -8,3 +8,10 @@
 	autoStash = true
 [diff]
 	tool = vscode
+[interactive]
+    diffFilter = delta --color-only
+[delta]
+    navigate = true  # use n and N to move between diff sections
+    dark = true      # or light = true, or omit for auto-detection
+[merge]
+    conflictStyle = zdiff3
