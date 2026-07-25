@@ -45,7 +45,6 @@
     5. Select the 'Solarized Dark' theme from Color Presets...
 * [Enable Session Restoration](https://www.iterm2.com/documentation-restoration.html)
 * Configure zsh theme run `p10k configure`
-    * Might need to clone repo according to instructions in https://github.com/romkatv/powerlevel10k#oh-my-zsh
 
 ### Github/Gitlab
 * Generate SSH key pair and add to Github/Gitlab
