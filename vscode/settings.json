@@ -62,11 +62,6 @@
   "git.autoStash": true,
   "git.autofetch": true,
   "git.confirmSync": true,
-  "gitlab.instanceUrl": "https://gitlab.oc.zillow.com/",
-  "gitlab.showIssueLinkOnStatusBar": false,
-  "gitlens.advanced.messages": {
-    "suppressShowKeyBindingsNotice": true
-  },
   "gitlens.blame.format": "${author|7?} ${message|20?} ${agoOrDate|14-}",
   "gitlens.blame.highlight.locations": [
     "overview",
@@ -75,8 +70,6 @@
   ],
   "gitlens.codeLens.enabled": false,
   "gitlens.currentLine.enabled": false,
-  "gitlens.gitExplorer.files.compact": false,
-  "gitlens.gitExplorer.location": "scm",
   "gitlens.hovers.currentLine.over": "line",
   "gitlens.menus": {
     "editor": {
@@ -104,10 +97,7 @@
       "remote": true
     }
   },
-  "gitlens.settings.mode": "advanced",
   "gitlens.views.repositories.files.layout": "tree",
-  "gitlens.views.repositories.location": "scm",
-  "gitlens.views.search.files.layout": "list",
   "[go]": {
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
@@ -125,22 +115,7 @@
   "python.autoComplete.extraPaths": [
     "~/Github/PracticeProblems/Leetcode/"
   ],
-  "python.formatting.autopep8Args": [
-    "--max-line-length=120"
-  ],
-  // "python.formatting.blackPath": "/Users/darylh/.local/share/virtualenvs/black-sfK7EZbx/bin/black",
-  // "python.formatting.blackArgs": ["--line-length", "120"],
-  "python.formatting.provider": "black",
-  // Currently using jedi instead of python language server.
-  // Change once refactoring in language server is faster. Also remove, importmagic python extension
-  "python.jediEnabled": false,
   "vsintellicode.python.completionsEnabled": true,
-  "python.linting.pycodestyleArgs": [
-    "--max-line-length=120",
-    "--ignore=W191" // indentation contains tabs (W191)
-  ],
-  "python.linting.pycodestyleEnabled": false,
-  // "python.linting.pylintEnabled": true,
   "search.exclude": {
     "**/node_modules": true,
     "**/.history": true,
@@ -148,25 +123,12 @@
     "**/vendor": true
   },
   "search.showLineNumbers": false,
-  "sync.autoUpload": true,
-  "sync.gist": "aef92116b0641855b23896dcdb963cc0",
-  "sync.quietSync": true,
   "telemetry.enableCrashReporter": false,
   "telemetry.enableTelemetry": false,
   "terminal.integrated.defaultProfile.osx": "zsh",
   "terminal.external.osxExec": "iTerm.app",
   "terminal.integrated.fontFamily": "MesloLGS NF",
   "terminal.integrated.fontSize": 14,
-  // "todo-tree.customHighlight": {
-  //   "TODO": {},
-  //   "FIXME": {}
-  // },
-  // "todo-tree.defaultHighlight": {
-  //   "foreground": "green",
-  //   "type": "none"
-  // },
-  // "todohighlight.isEnable": true,
-  "vim.disableAnnoyingNeovimMessage": true,
   "vim.leader": "<space>",
   "vim.normalModeKeyBindingsNonRecursive": [
     {
@@ -242,7 +204,6 @@
   "workbench.editor.enablePreview": true,
   "workbench.editor.showTabs": false,
   "workbench.list.openMode": "doubleClick",
-  "workbench.statusBar.feedback.visible": false,
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -253,16 +214,12 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "explorer.openEditors.visible": 1,
-  // TODO remove if this doesn't fix terminal issues
-  "terminal.integrated.experimentalRefreshOnResume": true,
   "go.gopath": "~/golang",
   // "go.gopath": "/Users/darylh/.gvm/pkgsets/go1.15/global",
   // "go.goroot": "/Users/darylh/.gvm/gos/go1.15",
-  "terminal.integrated.rendererType": "dom",
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "sync.forceUpload": true,
   "editor.cursorSurroundingLines": 5,
   "search.useGlobalIgnoreFiles": true,
   "todo-tree.highlights.customHighlight": {
@@ -280,7 +237,6 @@
   "leetcode.showCommentDescription": true,
   "leetcode.defaultLanguage": "python3",
   "leetcode.hint.commentDescription": false,
-  "todo-tree.tree.showScanModeButton": false,
   "editor.columnSelection": false,
   "editor.fontSize": 15,
   "python.analysis.extraPaths": [

@@ -31,11 +31,6 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "alt+cmd+up",
-    "command": "-editor.action.insertCursorAbove",
-    "when": "editorTextFocus"
-  },
-  {
     "key": "cmd+9",
     "command": "workbench.view.scm"
   },
@@ -149,12 +144,7 @@
   {
     "key": "alt+h",
     "command": "gitlens.showQuickFileHistory",
-    "when": "gitlens:enabled && gitlens:keymap == 'alternate'"
-  },
-  {
-    "key": "alt+h",
-    "command": "-gitlens.showQuickFileHistory",
-    "when": "gitlens:enabled && gitlens:keymap == 'alternate'"
+    "when": "editorTextFocus && !gitlens:disabled"
   },
   {
     "key": "ctrl+cmd+h",
@@ -465,11 +455,6 @@
     "command": "search.action.focusNextSearchResult",
     "when": "hasSearchResult && searchViewletVisible"
   },
-  {
-    "key": "shift+f4",
-    "command": "references-view.prev",
-    "when": "reference-list.hasResult && reference-list.isActive && !inReferenceSearchEditor && !referenceSearchVisible && !searchViewletVisible"
-  },
   // TODO end - may be able to remove f4 shortcuts once reference-list.visible is implemented
   {
     "key": "cmd+shift+f12",
@@ -487,14 +472,9 @@
     "when": "editorFocus && editorLangId == 'javascript'"
   },
   {
-    "key": "shift+cmd+]",
-    "command": "workbench.action.terminal.focusNext",
-    "when": "terminalFocus"
-  },
-  {
-    "key": "shift+cmd+]",
-    "command": "-workbench.action.terminal.focusNext",
-    "when": "terminalFocus"
+    "key": "",
+    "command": "workbench.action.terminal.focusNextPane",
+    "when": "terminalHasBeenCreated || terminalProcessSupported"
   },
   {
     "key": "cmd+w",
@@ -545,23 +525,15 @@
     "key": "cmd+shift+f",
     // "command": "search.action.openNewEditorToSide",
     // "args": { "triggerSearch":true, "focusResults": false }
-  "command": "workbench.action.findInFiles"
-},
-{
-  "key": "ctrl+d",
-  "command": "-workbench.action.debug.run",
-  "when": "debuggersAvailable && !inDebugMode && !terminalFocus"
-},
-{
-  "key": "cmd+k cmd+w",
-  "command": "-workbench.action.closeAllEditors"
-},
-{
-  "key": "cmd+k cmd+w",
-  "command": "workbench.action.closeAllEditors"
-},
-{
-  "key": "shift+cmd+t",
-  "command": "relatedFiles.openNextRelatedFile"
-}
+    "command": "workbench.action.findInFiles"
+  },
+  {
+    "key": "ctrl+d",
+    "command": "-workbench.action.debug.run",
+    "when": "debuggersAvailable && !inDebugMode && !terminalFocus"
+  },
+  {
+    "key": "cmd+k cmd+w",
+    "command": "-workbench.action.closeAllEditors"
+  }
 ]
