@@ -458,7 +458,7 @@
   // TODO end - may be able to remove f4 shortcuts once reference-list.visible is implemented
   {
     "key": "cmd+shift+f12",
-    "command": "macros.maximizeEditorHidePanels"
+    "command": "workbench.action.toggleZenMode"
   },
   {
     "key": "ctrl+r",
