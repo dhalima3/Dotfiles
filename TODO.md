@@ -7,5 +7,3 @@
 - karabiner
   - take out of dotbot - wasn't able to install
   - just had to manually copy the karabiner.json contents
- 
-- grc - take out? dotbot failed to install

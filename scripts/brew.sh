@@ -127,7 +127,6 @@ brew cleanup
 #brew install --cask dash
 #brew install virtualbox
 #brew install terraform
-#brew install grc
 #brew install --cask macdown
 #brew install --cask teamviewer
 #brew install --cask rescuetime
