@@ -46,7 +46,7 @@ brew install --cask obsidian
 brew install --cask nikitabobko/tap/aerospace
 brew install --cask selfcontrol
 brew install --cask jordanbaird-ice
-brew install youtube-dl
+brew install yt-dlp
 brew install ffmpeg
 #brew install gabrie30/utils/ghorg # quickly clone entire org repos
 
@@ -70,18 +70,13 @@ brew install --cask postman
 brew install --cask virtualbox
 brew install --cask charles
 brew install --cask docker
-brew install --cask blurred
 brew install postgres
-brew install dep
 brew install protobuf
 brew install fswatch
 brew install zsh-autosuggestions
-brew install romkatv/powerlevel10k/powerlevel10k
-brew tap homebrew/cask-fonts
 brew install --cask font-fira-code
 brew install ripgrep
 brew install fzf
-$(brew --prefix)/opt/fzf/install
 
 # Install Dev Homebrews
 # Install Xcode before macvim
@@ -98,7 +93,7 @@ brew install git
 brew install git-delta
 brew install jj
 brew install rustup
-rustup-init
+rustup default stable
 
 # Remove outdated versions from the cellar
 brew cleanup

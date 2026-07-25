@@ -20,6 +20,7 @@
     * Session Pomodoro Focus Timer
     * Outread
     * Onedrive
+    * Blurred - need to find free alternative
 * No Casks Available
     * Stand
     * Microsoft Office
