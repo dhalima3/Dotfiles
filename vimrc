@@ -25,9 +25,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'majutsushi/tagbar'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'flazz/vim-colorschemes'
-Plugin 'klen/python-mode'
 Plugin 'bps/vim-textobj-python'
-Plugin 'davidhalter/jedi-vim'
 Plugin 'pangloss/vim-javascript'
 Plugin 'myhere/vim-nodejs-complete'
 Plugin 'ternjs/tern_for_vim'
@@ -190,7 +188,6 @@ autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
 autocmd BufNewFile,BufRead *.md set spell filetype=markdown
 autocmd FileType html setlocal omnifunc=htmlcomplete#CompleteTags
 autocmd FileType javascript setlocal omnifunc=tern#Complete
-autocmd FileType python setlocal omnifunc=jedi#completions
 autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 " Enable heavy omni completion.
 if !exists('g:neocomplete#sources#omni#input_patterns')
@@ -204,28 +201,13 @@ endif
 "let g:neocomplete#sources#omni#input_patterns.c = '[^.[:digit:] *\t]\%(\.\|->\)'
 "let g:neocomplete#sources#omni#input_patterns.cpp = '[^.[:digit:] *\t]\%(\.\|->\)\|\h\w*::'
 "let g:neocomplete#sources#omni#input_patterns.ruby = '[^. *\t]\.\h\w*\|\h\w*::'
-let g:neocomplete#force_omni_input_patterns.python = '\%([^. \t]\.\|^\s*@\|^\s*from\s.\+import \|^\s*from \|^\s*import \)\w*'
 
 " Youcompleteme
 " Close omni-completion once a selection is made
 "let g:ycm_autoclose_preview_window_after_insertion = 1
 
-" Python Mode
-" Solve conflict with youcompleteme
-let g:pymode_rope_complete_on_dot = 0
-" Disable pymode rope autocompletion to avoid conflict with jedi
-let g:pymode_rope_completion=0
-" Disable code folding
-let g:pymode_folding = 0
-" Keybinding to fix python lint errors
-autocmd filetype python nnoremap <Leader>pl :PymodeLintAuto<CR>
-" Replace Python Mode's Run keybinding
-autocmd filetype python nnoremap <buffer> <Leader>r :!clear;python %<CR>
-
-" Jedi Vim
-let g:jedi#completions_enabled = 0
-let g:jedi#auto_vim_configuration = 0
-let g:jedi#smart_auto_mappings = 0
+" Run the current Python file
+autocmd FileType python nnoremap <buffer> <Leader>r :!clear;python3 %<CR>
 
 " Vim-expand-region
 vmap v <Plug>(expand_region_expand)

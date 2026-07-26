@@ -86,6 +86,8 @@ brew install tmux
 brew install zsh
 brew install uv
 uv python install --default
+uv tool install ty
+uv tool install ruff
 brew install node
 brew install pnpm
 brew install ruby
