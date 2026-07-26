@@ -1,5 +1,10 @@
-source ~/.vimrc
 let mapleader = " "
+
+" Shared core mappings
+inoremap jj <Esc>
+nnoremap <Leader>w :w<CR>
+nnoremap <silent> <Esc> :nohlsearch<CR><Esc>
+
 " Enable vim-surround emulation
 set surround
 " Set relative line numbering

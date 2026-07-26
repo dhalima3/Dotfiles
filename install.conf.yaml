@@ -7,8 +7,6 @@
 - link:
     ~/.dotfiles: ''
     ~/.config/nvim: nvim
-    ~/.vim: vim
-    ~/.vimrc: vimrc
     ~/.ideavimrc: ideavimrc
     ~/.fonts: fonts
     ~/.zsh: zsh
@@ -18,6 +16,3 @@
     ~/.gitignore: gitignore
     ~/.aerospace.toml: aerospace.toml
     ~/.config/karabiner/karabiner.json: karabiner/karabiner.json
-
-- shell:
-  - [git submodule update --init --recursive, Installing submodules]

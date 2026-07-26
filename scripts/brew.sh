@@ -74,7 +74,7 @@ brew install postgres
 brew install protobuf
 brew install fswatch
 brew install zsh-autosuggestions
-brew install --cask font-fira-code
+brew install --cask font-fira-code-nerd-font
 brew install ripgrep
 brew install fzf
 brew install dotbot

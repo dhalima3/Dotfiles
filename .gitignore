@@ -30,7 +30,6 @@ Icon?
 ehthumbs.db
 Thumbs.db
 
-# Vim Bundle (Plugins) #
-########################
-vim/bundle/**
+# Editor state #
+################
 .netrwhist
