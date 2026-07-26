@@ -41,12 +41,10 @@ vim.api.nvim_create_autocmd("FileType", {
 })
 
 vim.api.nvim_create_autocmd("LspAttach", {
-  group = vim.api.nvim_create_augroup("python_lsp_completion", { clear = true }),
+  group = vim.api.nvim_create_augroup("lsp_completion", { clear = true }),
   callback = function(event)
     local client = assert(vim.lsp.get_client_by_id(event.data.client_id))
-    if client == nil then
-      return
-    end
+
     if client.name == "ruff" then
       client.server_capabilities.hoverProvider = false
     end
@@ -54,6 +52,10 @@ vim.api.nvim_create_autocmd("LspAttach", {
     if client:supports_method("textDocument/completion") then
       vim.lsp.completion.enable(true, client.id, event.buf, {
         autotrigger = true,
+      })
+      vim.keymap.set("i", "<C-Space>", vim.lsp.completion.get, {
+        buffer = event.buf,
+        desc = "Trigger LSP completion",
       })
     end
   end,

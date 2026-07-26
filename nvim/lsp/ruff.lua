@@ -8,5 +8,4 @@ return {
     ".ruff.toml",
     ".git",
   },
-  settings = {},
 }
