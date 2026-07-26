@@ -1,6 +1,35 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
+local treesitter_parsers = {
+  "bash",
+  "css",
+  "html",
+  "javascript",
+  "json",
+  "lua",
+  "markdown",
+  "markdown_inline",
+  "python",
+  "tsx",
+  "typescript",
+}
+
+vim.api.nvim_create_autocmd("PackChanged", {
+  group = vim.api.nvim_create_augroup("treesitter_pack_update", { clear = true }),
+  callback = function(event)
+    if event.data.spec.name ~= "nvim-treesitter" then
+      return
+    end
+
+    if event.data.kind == "install" or event.data.kind == "update" then
+      vim.cmd.packadd("nvim-treesitter")
+      require("nvim-treesitter").install(treesitter_parsers)
+    end
+  end,
+  desc = "Install Treesitter parsers after plugin changes",
+})
+
 vim.pack.add({
   {
     src = "https://github.com/nvim-mini/mini.nvim",
@@ -8,11 +37,15 @@ vim.pack.add({
   },
   "https://github.com/brianhuster/live-preview.nvim",
   "https://github.com/ibhagwan/fzf-lua",
+  "https://github.com/neovim/nvim-lspconfig",
+  "https://github.com/nvim-treesitter/nvim-treesitter",
   {
     src = "https://github.com/catppuccin/nvim",
     name = "catppuccin",
   },
 })
+
+require("nvim-treesitter").install(treesitter_parsers)
 
 vim.opt.number = true
 vim.opt.wrap = false
@@ -91,6 +124,28 @@ vim.keymap.set("n", "<Leader>ws", MiniTrailspace.trim, {
 
 vim.api.nvim_create_autocmd("FileType", {
   group = vim.api.nvim_create_augroup("core_filetype_settings", { clear = true }),
+  pattern = {
+    "bash",
+    "css",
+    "html",
+    "javascript",
+    "javascriptreact",
+    "json",
+    "jsonc",
+    "lua",
+    "markdown",
+    "python",
+    "typescript",
+    "typescriptreact",
+  },
+  callback = function(event)
+    pcall(vim.treesitter.start, event.buf)
+  end,
+  desc = "Enable Treesitter highlighting",
+})
+
+vim.api.nvim_create_autocmd("FileType", {
+  group = "core_filetype_settings",
   pattern = "markdown",
   callback = function()
     vim.opt_local.spell = true
@@ -131,4 +186,11 @@ vim.api.nvim_create_autocmd("LspAttach", {
   end,
 })
 
-vim.lsp.enable({ "ty", "ruff" })
+vim.lsp.enable({
+  "biome",
+  "eslint",
+  "ruff",
+  "tailwindcss",
+  "ts_native",
+  "ty",
+})

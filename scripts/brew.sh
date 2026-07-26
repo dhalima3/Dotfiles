@@ -82,6 +82,7 @@ brew install dotbot
 # Install Dev Homebrews
 # Install Xcode before macvim
 brew install neovim
+brew install tree-sitter-cli
 brew install tmux
 brew install zsh
 brew install uv
