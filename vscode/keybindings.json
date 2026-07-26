@@ -138,17 +138,13 @@
   },
   {
     "key": "cmd+3",
-    "command": "workbench.action.focusPanel",
+    "command": "workbench.action.focusPanel"
     // "when": "editorTextFocus"
   },
   {
     "key": "alt+h",
     "command": "gitlens.showQuickFileHistory",
     "when": "editorTextFocus && !gitlens:disabled"
-  },
-  {
-    "key": "ctrl+cmd+h",
-    "command": "git.viewFileHistory"
   },
   {
     "key": "ctrl+cmd+o",
@@ -293,16 +289,6 @@
     "key": "shift+cmd+9",
     // "command": "git.viewHistory"
     "command": "gitlens.showLineHistoryView"
-  },
-  {
-    "key": "alt+9",
-    "command": "git.commit.view.hide",
-    "when": "git.commit.view.show"
-  },
-  {
-    "key": "alt+9",
-    "command": "git.commit.view.show",
-    "when": "!git.commit.view.show"
   },
   {
     "key": "cmd+f2",
@@ -499,7 +485,7 @@
   },
   {
     "key": "ctrl+r",
-    "command": "-workbench.action.tasks.reRunTask",
+    "command": "-workbench.action.tasks.reRunTask"
   },
   {
     "key": "shift+cmd+k",

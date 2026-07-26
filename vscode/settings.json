@@ -1,6 +1,7 @@
 {
   "[jsonc]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
   },
   "breadcrumbs.enabled": true,
   "cSpell.userWords": [
@@ -15,13 +16,11 @@
   "editor.bracketPairColorization.enabled": true,
   "editor.guides.bracketPairs": "active",
   "editor.codeActionsOnSave": {
-    // "source.fixAll": true
-    // "source.organizeImports": true
+    "source.fixAll.eslint": "explicit"
   },
   // "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
   "editor.fontFamily": "Fira Code",
   "editor.fontLigatures": "'ss02', 'ss03', 'ss05'",
-  "editor.formatOnSave": false,
   "editor.lineNumbers": "on",
   "editor.minimap.enabled": false,
   "editor.rulers": [
@@ -101,21 +100,21 @@
   "[go]": {
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
-      "source.organizeImports": true
+      "source.organizeImports": "always"
     }
   },
   //   "javascript.implicitProjectConfig.checkJs": true,
-  "local-history.saveDelay": 300,
-  "macros": {
-    "maximizeEditorHidePanels": [
-      "workbench.action.closePanel",
-      "workbench.action.maximizeEditor",
-    ]
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.ruff": "explicit",
+      "source.organizeImports.ruff": "explicit"
+    }
   },
-  "python.autoComplete.extraPaths": [
-    "~/Github/PracticeProblems/Leetcode/"
-  ],
-  "vsintellicode.python.completionsEnabled": true,
+  "python.languageServer": "None",
+  "ruff.lineLength": 120,
+  "ty.importStrategy": "useBundled",
   "search.exclude": {
     "**/node_modules": true,
     "**/.history": true,
@@ -123,8 +122,7 @@
     "**/vendor": true
   },
   "search.showLineNumbers": false,
-  "telemetry.enableCrashReporter": false,
-  "telemetry.enableTelemetry": false,
+  "telemetry.telemetryLevel": "off",
   "terminal.integrated.defaultProfile.osx": "zsh",
   "terminal.external.osxExec": "iTerm.app",
   "terminal.integrated.fontFamily": "MesloLGS NF",
@@ -197,10 +195,9 @@
   "zenMode.restore": false,
   "zenMode.showTabs": "single",
   "zenMode.silentNotifications": false,
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "window.openFoldersInNewWindow": "on",
   "window.title": "${activeEditorLong},${separator}${rootName}",
-  "workbench.activityBar.visible": false,
+  "workbench.activityBar.location": "hidden",
   "workbench.colorCustomizations": {
     "terminal.foreground": "#839496",
     "terminal.background": "#193549",
@@ -209,23 +206,33 @@
   "workbench.colorTheme": "Cobalt2",
   "workbench.editor.enablePreviewFromQuickOpen": true,
   "workbench.editor.enablePreview": true,
-  "workbench.editor.showTabs": false,
+  "workbench.editor.showTabs": "single",
   "workbench.list.openMode": "doubleClick",
+  "workbench.localHistory.mergeWindow": 300,
   "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
   },
   "[json]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
   },
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
   },
   "explorer.openEditors.visible": 1,
-  "go.gopath": "~/golang",
-  // "go.gopath": "/Users/darylh/.gvm/pkgsets/go1.15/global",
-  // "go.goroot": "/Users/darylh/.gvm/gos/go1.15",
   "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
   },
   "editor.cursorSurroundingLines": 5,
   "search.useGlobalIgnoreFiles": true,
@@ -246,18 +253,10 @@
   "leetcode.hint.commentDescription": false,
   "editor.columnSelection": false,
   "editor.fontSize": 15,
-  "python.analysis.extraPaths": [
-    "~/Github/PracticeProblems/Leetcode/"
-  ],
-  "cSpell.enableFiletypes": [
-    "typescriptreact"
-  ],
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter-notebook"
   },
-  // "editor.tabSize": 8,
   "editor.cursorStyle": "line",
-  "editor.insertSpaces": false,
   "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
   "editor.wordWrap": "off",
   "notebook.cellToolbarLocation": {
@@ -273,8 +272,6 @@
   "cSpell.language": "en,en-US",
   "vsicons.dontShowNewVersionMessage": true,
   "go.toolsManagement.autoUpdate": true,
-  "python.languageServer": "Pylance",
-  "python.analysis.indexing": true,
   "files.exclude": {
     "**/__pycache__": true
   },
