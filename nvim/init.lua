@@ -8,6 +8,10 @@ vim.pack.add({
   },
   "https://github.com/brianhuster/live-preview.nvim",
   "https://github.com/ibhagwan/fzf-lua",
+  {
+    src = "https://github.com/catppuccin/nvim",
+    name = "catppuccin",
+  },
 })
 
 vim.opt.number = true
@@ -47,6 +51,11 @@ require("mini.surround").setup({
 })
 require("mini.trailspace").setup()
 require("livepreview.config").set()
+
+require("catppuccin").setup({
+  flavour = "macchiato",
+})
+vim.cmd.colorscheme("catppuccin-nvim")
 
 vim.keymap.del("x", "ys")
 vim.keymap.set("x", "S", [[:<C-u>lua MiniSurround.add("visual")<CR>]], {
