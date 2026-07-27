@@ -71,6 +71,7 @@ vim.keymap.set("n", "<Esc>", "<Cmd>nohlsearch<CR><Esc>", {
 })
 
 require("mini.diff").setup()
+require("mini.files").setup()
 require("mini.git").setup()
 require("mini.icons").setup()
 require("mini.pairs").setup()
@@ -89,6 +90,13 @@ require("mini.surround").setup({
 })
 require("mini.trailspace").setup()
 require("livepreview.config").set()
+require("fzf-lua").setup({
+  winopts = {
+    preview = {
+      wrap = true,
+    },
+  },
+})
 require("conform").setup({
   formatters_by_ft = {
     css = { "biome" },
@@ -134,6 +142,19 @@ vim.keymap.set("n", "<Leader>o", function()
     },
   })
 end, { desc = "Find files (recent first)" })
+
+vim.keymap.set("n", "<Leader>1", function()
+  if MiniFiles.close() then
+    return
+  end
+
+  local current_file = vim.api.nvim_buf_get_name(0)
+  MiniFiles.open(current_file ~= "" and current_file or nil)
+end, { desc = "Toggle file explorer" })
+
+vim.keymap.set("n", "<Leader>9", function()
+  require("fzf-lua").git_status()
+end, { desc = "Git status" })
 
 vim.keymap.set("n", "<Leader>gs", "<Cmd>Git status<CR>", { desc = "Git status" })
 vim.keymap.set("n", "<Leader>gd", "<Cmd>Git diff<CR>", { desc = "Git diff" })
