@@ -12,7 +12,7 @@ alias o='open'
 ## Shortcuts
 alias dl="cd ~/Downloads"
 alias p="cd ~/Github"
-alias rm="trash"
+alias rm='trash'
 alias ij="open -b com.jetbrains.intellij"
 alias goland='open -a GoLand'
 

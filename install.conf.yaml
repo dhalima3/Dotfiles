@@ -4,6 +4,10 @@
 
 - clean: ['~']
 
+- create:
+    - ~/.config
+    - ~/.config/karabiner
+
 - link:
     ~/.dotfiles: ''
     ~/.config/nvim: nvim

@@ -1,8 +1,19 @@
 #!/bin/sh
 
 # Install Xcode CLT if it isn't already installed
-if ! xcode-select -p 1>/dev/null; then
+if ! xcode-select -p 1>/dev/null 2>&1; then
+  echo "Xcode Command Line Tools are required. Starting the macOS installer..."
   xcode-select --install
+
+  echo "Complete the Command Line Tools installation in the window that opened."
+  echo "This script will continue automatically when the tools are ready."
+  echo "Press Ctrl-C to cancel."
+
+  until xcode-select -p 1>/dev/null 2>&1; do
+    sleep 10
+  done
+
+  echo "Xcode Command Line Tools are ready."
 fi
 
 # Install homebrew if it isn't already installed
@@ -37,7 +48,6 @@ brew install --cask flux
 brew install --cask anki
 brew install --cask vlc
 brew install --cask kap
-brew install --cask android-file-transfer
 brew install scrcpy
 brew install --cask bettertouchtool
 brew install --cask karabiner-elements
@@ -92,6 +102,8 @@ uv python install --default
 uv tool install ty
 uv tool install ruff
 brew install node
+brew install biome
+brew install tailwindcss-language-server
 brew install pnpm
 brew install ruby
 brew install wget
