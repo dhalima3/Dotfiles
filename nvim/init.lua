@@ -40,6 +40,10 @@ vim.pack.add({
     version = "stable",
   },
   "https://github.com/brianhuster/live-preview.nvim",
+  {
+    src = "https://github.com/saghen/blink.cmp",
+    version = vim.version.range("1.*"),
+  },
   "https://github.com/ibhagwan/fzf-lua",
   "https://github.com/neovim/nvim-lspconfig",
   "https://github.com/nvim-treesitter/nvim-treesitter",
@@ -51,6 +55,25 @@ vim.pack.add({
 })
 
 require("nvim-treesitter").install(treesitter_parsers)
+
+require("blink.cmp").setup({
+  keymap = {
+    preset = "super-tab",
+    ["<CR>"] = { "accept", "fallback" },
+  },
+  completion = {
+    documentation = {
+      auto_show = true,
+      auto_show_delay_ms = 300,
+    },
+    ghost_text = { enabled = true },
+  },
+  signature = { enabled = true },
+  sources = {
+    default = { "lsp", "path", "snippets", "buffer" },
+  },
+  fuzzy = { implementation = "prefer_rust_with_warning" },
+})
 
 vim.opt.number = true
 vim.opt.wrap = false
@@ -213,22 +236,12 @@ vim.api.nvim_create_autocmd("FileType", {
 })
 
 vim.api.nvim_create_autocmd("LspAttach", {
-  group = vim.api.nvim_create_augroup("lsp_completion", { clear = true }),
+  group = vim.api.nvim_create_augroup("lsp_settings", { clear = true }),
   callback = function(event)
     local client = assert(vim.lsp.get_client_by_id(event.data.client_id))
 
     if client.name == "ruff" then
       client.server_capabilities.hoverProvider = false
-    end
-
-    if client:supports_method("textDocument/completion") then
-      vim.lsp.completion.enable(true, client.id, event.buf, {
-        autotrigger = true,
-      })
-      vim.keymap.set("i", "<C-Space>", vim.lsp.completion.get, {
-        desc = "Trigger LSP completion",
-        buffer = event.buf,
-      })
     end
   end,
 })
