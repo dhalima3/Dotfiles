@@ -20,6 +20,7 @@ local treesitter_parsers = {
 }
 
 vim.api.nvim_create_autocmd("PackChanged", {
+  desc = "Install Treesitter parsers after plugin changes",
   group = vim.api.nvim_create_augroup("treesitter_pack_update", { clear = true }),
   callback = function(event)
     if event.data.spec.name ~= "nvim-treesitter" then
@@ -31,7 +32,6 @@ vim.api.nvim_create_autocmd("PackChanged", {
       require("nvim-treesitter").install(treesitter_parsers)
     end
   end,
-  desc = "Install Treesitter parsers after plugin changes",
 })
 
 vim.pack.add({
@@ -114,12 +114,12 @@ vim.cmd.colorscheme("catppuccin-nvim")
 
 vim.keymap.del("x", "ys")
 vim.keymap.set("x", "S", [[:<C-u>lua MiniSurround.add("visual")<CR>]], {
-  silent = true,
   desc = "Add surrounding",
+  silent = true,
 })
 vim.keymap.set("n", "yss", "ys_", {
-  remap = true,
   desc = "Surround line",
+  remap = true,
 })
 
 vim.keymap.set("n", "<Leader>o", function()
@@ -145,6 +145,7 @@ vim.keymap.set("n", "<Leader>ws", MiniTrailspace.trim, {
 })
 
 vim.api.nvim_create_autocmd("FileType", {
+  desc = "Enable Treesitter highlighting",
   group = vim.api.nvim_create_augroup("core_filetype_settings", { clear = true }),
   pattern = {
     "bash",
@@ -167,28 +168,27 @@ vim.api.nvim_create_autocmd("FileType", {
   callback = function(event)
     pcall(vim.treesitter.start, event.buf)
   end,
-  desc = "Enable Treesitter highlighting",
 })
 
 vim.api.nvim_create_autocmd("FileType", {
+  desc = "Enable spell checking for Markdown",
   group = "core_filetype_settings",
   pattern = "markdown",
   callback = function()
     vim.opt_local.spell = true
   end,
-  desc = "Enable spell checking for Markdown",
 })
 
 vim.api.nvim_create_autocmd("FileType", {
+  desc = "Configure Python mappings",
   group = "core_filetype_settings",
   pattern = "python",
   callback = function(event)
     vim.keymap.set("n", "<Leader>r", "<Cmd>!clear; python3 %<CR>", {
-      buffer = event.buf,
       desc = "Run current Python file",
+      buffer = event.buf,
     })
   end,
-  desc = "Configure Python mappings",
 })
 
 vim.api.nvim_create_autocmd("LspAttach", {
@@ -205,8 +205,8 @@ vim.api.nvim_create_autocmd("LspAttach", {
         autotrigger = true,
       })
       vim.keymap.set("i", "<C-Space>", vim.lsp.completion.get, {
-        buffer = event.buf,
         desc = "Trigger LSP completion",
+        buffer = event.buf,
       })
     end
   end,
