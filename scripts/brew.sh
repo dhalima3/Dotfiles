@@ -60,6 +60,8 @@ brew install --cask private-internet-access
 
 # Dev
 brew install go
+go install golang.org/x/tools/gopls@latest
+go install golang.org/x/tools/cmd/goimports@latest
 brew install --cask temurin@21 # java
 brew install --cask iterm2
 brew install --cask visual-studio-code

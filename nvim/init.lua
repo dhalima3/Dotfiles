@@ -4,6 +4,10 @@ vim.g.maplocalleader = " "
 local treesitter_parsers = {
   "bash",
   "css",
+  "go",
+  "gomod",
+  "gosum",
+  "gowork",
   "html",
   "javascript",
   "json",
@@ -88,6 +92,7 @@ require("livepreview.config").set()
 require("conform").setup({
   formatters_by_ft = {
     css = { "biome" },
+    go = { "goimports" },
     javascript = { "biome-organize-imports", "biome" },
     javascriptreact = { "biome-organize-imports", "biome" },
     json = { "biome" },
@@ -144,6 +149,10 @@ vim.api.nvim_create_autocmd("FileType", {
   pattern = {
     "bash",
     "css",
+    "go",
+    "gomod",
+    "gosum",
+    "gowork",
     "html",
     "javascript",
     "javascriptreact",
@@ -206,6 +215,7 @@ vim.api.nvim_create_autocmd("LspAttach", {
 vim.lsp.enable({
   "biome",
   "eslint",
+  "gopls",
   "ruff",
   "tailwindcss",
   "ts_native",
