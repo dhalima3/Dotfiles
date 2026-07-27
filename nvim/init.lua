@@ -39,6 +39,7 @@ vim.pack.add({
   "https://github.com/ibhagwan/fzf-lua",
   "https://github.com/neovim/nvim-lspconfig",
   "https://github.com/nvim-treesitter/nvim-treesitter",
+  "https://github.com/stevearc/conform.nvim",
   {
     src = "https://github.com/catppuccin/nvim",
     name = "catppuccin",
@@ -84,6 +85,22 @@ require("mini.surround").setup({
 })
 require("mini.trailspace").setup()
 require("livepreview.config").set()
+require("conform").setup({
+  formatters_by_ft = {
+    css = { "biome" },
+    javascript = { "biome-organize-imports", "biome" },
+    javascriptreact = { "biome-organize-imports", "biome" },
+    json = { "biome" },
+    jsonc = { "biome" },
+    python = { "ruff_organize_imports", "ruff_format" },
+    typescript = { "biome-organize-imports", "biome" },
+    typescriptreact = { "biome-organize-imports", "biome" },
+  },
+  format_on_save = {
+    lsp_format = "fallback",
+    timeout_ms = 1000,
+  },
+})
 
 require("catppuccin").setup({
   flavour = "macchiato",
