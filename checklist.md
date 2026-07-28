@@ -38,17 +38,20 @@
 * Sign in to Google Drive
 
 ### Iterm
-* Sync settings with Dropbox
-    * Preferences > Load Preferences From a custom folder or URL > Point to Onedrive > Apps and Backups
-* Activate theme
-    1. iTerm2 > Preferences > Profiles > Colors Tab
-    2. Open the Color Presets... drop-down in the bottom right corner
-    3. Select Import... from the list
-    4. Select the itermcolors file from Dotfiles/fonts/
-    5. Select the 'Solarized Dark' theme from Color Presets...
-* [Enable Session Restoration](https://www.iterm2.com/documentation-restoration.html)
-* Powerlevel10k is installed by `scripts/zsh.sh`, and its configuration is linked by `./install`.
-    * To change the prompt, run `p10k configure` and commit the updated `p10k.zsh`.
+* Import the full iTerm2 settings from
+  `OneDrive/Apps and Backups/iTerm/iTerm2 State 2026.itermexport`
+* ^ If this doesn't work follow the instructions here:
+    * Sync settings with Dropbox
+        * Preferences > Load Preferences From a custom folder or URL > Point to Onedrive > Apps and Backups
+    * Activate theme
+        1. iTerm2 > Preferences > Profiles > Colors Tab
+        2. Open the Color Presets... drop-down in the bottom right corner
+        3. Select Import... from the list
+        4. Select the itermcolors file from Dotfiles/fonts/
+        5. Select the 'Solarized Dark' theme from Color Presets...
+    * [Enable Session Restoration](https://www.iterm2.com/documentation-restoration.html)
+    * Powerlevel10k is installed by `scripts/zsh.sh`, and its configuration is linked by `./install`.
+        * To change the prompt, run `p10k configure` and commit the updated `p10k.zsh`.
 
 ### Ghostty
 * `./install` links `ghostty/config` to `~/.config/ghostty/config`
