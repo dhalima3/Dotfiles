@@ -42,6 +42,13 @@ read -r -p "Sign in to the App Store if needed, then press Return to continue...
 # Install formulae, casks, and Mac App Store apps declared in Brewfile.
 brew bundle --file="${BASEDIR}/Brewfile"
 
+# Launch cloud storage apps so their interactive sign-in and setup can finish
+# before scripts depend on their synchronized folders.
+open -a "OneDrive"
+open -a "Google Drive"
+echo "Complete the OneDrive and Google Drive sign-in windows."
+read -r -p "Wait for both sync folders to appear in Finder, then press Return to continue..."
+
 # Install tools managed by their language-specific package managers.
 go install golang.org/x/tools/gopls@latest
 go install golang.org/x/tools/cmd/goimports@latest

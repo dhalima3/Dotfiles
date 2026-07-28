@@ -149,7 +149,17 @@ defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -int 0
 
 # Save screenshots to OneDrive
-defaults write com.apple.screencapture location -string "${HOME}/Onedrive/Pictures/Screenshots"
+ONEDRIVE_ROOT="${ONEDRIVE_ROOT:-${HOME}/Library/CloudStorage/OneDrive-Personal}"
+SCREENSHOT_DIR="${ONEDRIVE_ROOT}/Pictures/Screenshots"
+
+if [[ ! -d "${ONEDRIVE_ROOT}" ]]; then
+	echo "OneDrive is not initialized at ${ONEDRIVE_ROOT}." >&2
+	echo "Sign in to OneDrive, wait for its folder to appear, then rerun this script." >&2
+	exit 1
+fi
+
+mkdir -p "${SCREENSHOT_DIR}"
+defaults write com.apple.screencapture location -string "${SCREENSHOT_DIR}"
 
 # Save screenshots in PNG format (other options: BMP, GIF, JPG, PDF, TIFF)
 defaults write com.apple.screencapture type -string "png"
