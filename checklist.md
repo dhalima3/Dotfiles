@@ -9,29 +9,33 @@
 * Standard F1, F2, etc. keys are configured by `scripts/.macos` (delete once confirmed)
 * Screenshot App > Options > Change Save Location to Onedrive folder (Double check - should be done by running .macos)
 * Turn off Notifications for Messages
-* [Display time with seconds. System Preferences > Dock & Menu Bar > Clock and check "Display the time with seconds"](https://apple.stackexchange.com/questions/417686/how-can-i-show-seconds-on-macos-bigsurs-menu-bar-clock#:~:text=On%20macOS%20Big%20Sur%2C%20go,Display%20the%20time%20with%20seconds%22.)
-* Download from App Store
-    * Xcode
-    * Amphetamine
-    * Spokenly
-    * Klack
-    * Due
-    * Bitwarden
-    * Session Pomodoro Focus Timer
-    * Outread
-    * Onedrive
-    * Blurred - need to find free alternative
-* No Casks Available
-    * Stand
-    * Microsoft Office
+* Sign in to the App Store, then run `scripts/brew.sh` (delete once confirmed)
+    * Install Bitwarden manually.
+    * Installed from the Mac App Store with `mas`
+        * Xcode
+        * Amphetamine
+        * Klack
+        * Due
+        * Session Pomodoro Focus Timer
+        * Outread
+        * Blurred is disabled for now; find a maintained, free, open-source alternative
+    * Installed as Homebrew casks
+        * FluidVoice
+        * Bitwarden
+        * OneDrive
+        * Google Drive
+        * Stand
+        * Microsoft Excel
+        * Microsoft Word
 
 ### Trackpad/Mouse
 * Light click and three-finger drag are configured by `scripts/.macos` (delete once confirmed)
 
 ### File Syncing
 * Onedrive
-    * Add Temp folder to favorites sidebar
-* Google Drive
+    * Sign in and let the sync folder initialize
+    * Add Temp folder to the Finder favorites sidebar
+* Sign in to Google Drive
 
 ### Iterm
 * Sync settings with Dropbox
