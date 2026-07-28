@@ -20,8 +20,7 @@ fi
 if ! hash brew 2> /dev/null; then
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-    # Add homebrew to path
-    echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
+    # Make Homebrew available to the rest of this installer process.
     eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 
