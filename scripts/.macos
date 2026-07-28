@@ -52,6 +52,13 @@ sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo Hos
 # Show the day of the week in the menu bar clock
 defaults write com.apple.menuextra.clock ShowDayOfWeek -bool true
 
+# Show the date and seconds in the menu bar clock
+defaults write com.apple.menuextra.clock ShowDate -int 1
+defaults write com.apple.menuextra.clock ShowSeconds -bool true
+
+# Use Monday as the first day of the week
+defaults write NSGlobalDomain AppleFirstWeekday -dict gregorian -int 2
+
 # Disable automatic capitalization as it’s annoying when typing code
 defaults write NSGlobalDomain NSAutomaticCapitalizationEnabled -bool false
 
@@ -93,6 +100,15 @@ defaults write NSGlobalDomain InitialKeyRepeat -int 20
 
 # Use F1, F2, etc. as standard function keys
 defaults write NSGlobalDomain com.apple.keyboard.fnState -bool true
+
+# Use a light trackpad click
+defaults write com.apple.AppleMultitouchTrackpad FirstClickThreshold -int 0
+defaults write com.apple.AppleMultitouchTrackpad SecondClickThreshold -int 0
+
+# Enable three-finger dragging for built-in and Bluetooth trackpads
+defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag -bool true
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerDrag -bool true
+defaults -currentHost write NSGlobalDomain com.apple.trackpad.threeFingerDragGesture -int 1
 
 # Show language menu in the top right corner of the boot screen
 sudo defaults write /Library/Preferences/com.apple.loginwindow showInputMenu -bool true
@@ -297,6 +313,14 @@ defaults write com.apple.Safari AutoFillMiscellaneousForms -bool false
 
 # Warn about fraudulent websites
 defaults write com.apple.Safari WarnAboutFraudulentWebsites -bool true
+
+###############################################################################
+# Chrome & Brave                                                              #
+###############################################################################
+
+# Ask where to save each file before downloading
+defaults write com.google.Chrome PromptForDownloadLocation -bool true
+defaults write com.brave.Browser PromptForDownloadLocation -bool true
 
 ###############################################################################
 # Spotlight                                                                   #

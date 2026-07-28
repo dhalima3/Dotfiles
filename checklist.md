@@ -3,10 +3,10 @@
 ### General Settings
 * Change startup programs
     * Stand
-* Show date and day of week in menu bar. Date & Time > Clock > Show Date, Show the day of the week
+* Date, weekday, and seconds in the menu bar are configured by `scripts/.macos` (delete once confirmed)
 * Change Display to be 'More Space'
 * Bluetooth > Show Bluetooth in menu bar
-* Keyboard > Use F1, F2, etc. keys as standard function key
+* Standard F1, F2, etc. keys are configured by `scripts/.macos` (delete once confirmed)
 * Screenshot App > Options > Change Save Location to Onedrive folder (Double check - should be done by running .macos)
 * Turn off Notifications for Messages
 * [Display time with seconds. System Preferences > Dock & Menu Bar > Clock and check "Display the time with seconds"](https://apple.stackexchange.com/questions/417686/how-can-i-show-seconds-on-macos-bigsurs-menu-bar-clock#:~:text=On%20macOS%20Big%20Sur%2C%20go,Display%20the%20time%20with%20seconds%22.)
@@ -26,8 +26,7 @@
     * Microsoft Office
 
 ### Trackpad/Mouse
-* Trackpad > Click > Light
-* [Enable 3 finger drag](https://support.apple.com/en-us/HT204609)
+* Light click and three-finger drag are configured by `scripts/.macos` (delete once confirmed)
 
 ### File Syncing
 * Onedrive
@@ -72,7 +71,7 @@
 
 ### Calendar:
 * Add Google Account
-* Preferences > General > Start Week on: Monday
+* Monday as the first day of the week is configured by `scripts/.macos` (delete once confirmed)
 * Uncheck Google Calendars: Contacts, Visits, Birthdays (Other)
 * Preferences -> Alerts -> Birthdays (Set to None)
 * Change Preferences -> 'Default Calendar'
@@ -84,7 +83,7 @@
 * Settings > Social Media Blocking > Allow Facebook logins and embedded posts > Disable
 * Settings > Social Media Blocking > Allow LinkedIn embedded posts > Disable
 * Turn on Warn Before Quitting
-* Turn on Ask where to save each file before downloading
+* Asking where to save each download is configured by `scripts/.macos` (delete once confirmed)
 
 #### Vimium
 * Sync settings from file syncing service (Onedrive/Temp)
