@@ -46,6 +46,12 @@
 * Powerlevel10k is installed by `scripts/zsh.sh`, and its configuration is linked by `./install`.
     * To change the prompt, run `p10k configure` and commit the updated `p10k.zsh`.
 
+### Ghostty
+* `./install` links `ghostty/config` to `~/.config/ghostty/config`
+* Ghostty carries over the font, Solarized Dark theme, and session restoration;
+  other terminal behavior uses Ghostty's defaults.
+* Reload the config with `Command-Shift-,` after editing it.
+
 ### Github/Gitlab
 * Generate SSH key pair and add to Github/Gitlab
 

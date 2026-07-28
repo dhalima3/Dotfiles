@@ -6,6 +6,7 @@
 
 - create:
     - ~/.config
+    - ~/.config/ghostty
     - ~/.config/karabiner
 
 - link:
@@ -19,4 +20,5 @@
     ~/.gitconfig: gitconfig
     ~/.gitignore: gitignore
     ~/.aerospace.toml: aerospace.toml
+    ~/.config/ghostty/config: ghostty/config
     ~/.config/karabiner/karabiner.json: karabiner/karabiner.json
